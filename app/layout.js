@@ -1,4 +1,4 @@
-import './globals.scss'
+import "../styles/main.scss";
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
