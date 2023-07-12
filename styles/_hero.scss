@@ -1,0 +1,132 @@
+main{    //These are styles for the whole main!
+    display: flex;
+    flex-direction: column;
+}
+
+.container {    //These are styles for the whole div!
+    display: flex;
+    min-height: 100vh;
+    font-family: Fractul;
+}
+  
+  .left-column {    //These are styles for the whole left-column div!
+    font-size: 2rem;
+    padding: 0 10rem;
+    padding-top: 7rem;
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    background-color: #fff;
+    
+    h2{
+        font-size: 4rem;
+        width: 450px;
+    }
+
+    span{
+        cursor: pointer;
+        font-weight: bolder;
+        color: #ffa500;
+        text-decoration: underline;
+    }
+
+    p{
+        width: 44rem;
+        font-size: 1.5rem;
+        padding: 20px 0;
+    }
+
+    span:hover{
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+    .both-buttons{
+        display: flex;
+        border: transparent 0;
+        color: #fff;
+        padding: 2rem 0;
+        gap: 1.5rem; 
+
+        button{
+            cursor: pointer;
+            background-color: transparent 0;
+            border: none;
+            font-size: 1rem;
+            padding: 1rem 3rem;
+        }
+
+        .hire-me{
+            font-size: 1.5rem;
+            background-color: #ffa500;
+        }
+
+        .hire-me:hover{
+            border: 1px solid #000000;
+            background-color: white;
+        }
+        .projects{
+            font-size: 1.5rem;
+            background-color: white;
+        }
+
+        .projects:hover{
+            border: 1px solid #ffa500;
+        }
+    }
+
+    .info-section{
+        gap: 1rem;
+        align-items: center;
+        display: flex;
+        P{
+            flex: 1;
+            width: 100px;
+        }
+    } 
+}
+  
+  .right-column {    //These are styles for the whole right-column div!
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    font-size: 2rem;
+    padding: 0 10rem;
+    padding-top: 7rem;
+    // background-color: #000000;
+    color: #fff;
+    background-color: #00202e;
+    // background-image: url("https://img.freepik.com/free-photo/handsome-businessman-suit-glasses-cross-arms-chest-look_176420-21750.jpg?t=st=1688972391~exp=1688972991~hmac=dd478e67f6d04a11960d789a1a59ff76f09e6278553ed49be67f6fd0b4695b70");
+    // background-image: url("/public/images/author-image.jpg");
+
+    @media (max-width: 768px) {
+      .container {
+          position: absolute;
+        flex-direction: column;
+      }
+    
+      .right {
+        order: 1;
+        width: 100%;
+        padding: 2rem;
+        height: 100vh;
+      }
+    
+      .left {
+        order: 2;
+        width: 100%;
+      }
+  }
+  }
+  
+.end-footer {    //These are styles for the whole end off the footer!
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 2.5rem 0;
+    color: #000000;
+    background-color: red;
+}
