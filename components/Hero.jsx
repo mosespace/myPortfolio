@@ -57,7 +57,7 @@ export default function Hero() {
             <button className='hire-me'>Hire Me</button>
             <button className='projects'>Projects <ImArrowUpRight2/></button>
       </div>
-      <h1>+84</h1>
+      <h1 className='clients-text-h1'>+84</h1>
       <p className='clients-text'>Clients on work  worldwide</p>
     <div className='info-section'>
       <h1>572 +</h1>

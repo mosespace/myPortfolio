@@ -7,8 +7,9 @@ main{    //These are styles for the whole main!
     display: flex;
     min-height: 100vh;
     font-family: Fractul;
-
-
+    @media (max-width: 1366px) {
+        display: flex
+      }
       @media (max-width: 768px) {
         flex-direction: column-reverse;
       }
@@ -23,10 +24,30 @@ main{    //These are styles for the whole main!
     justify-content: center;
     flex-direction: column;
     background-color: #fff;
+    @media (max-width: 1366px) {
+        padding: 0 1.5rem;
+        padding-top: 2rem;
+        display: flex;
+        flex: 3;
+        justify-content: center;
+      }
     
     h2{
         font-size: 4rem;
         width: 450px;
+
+        @media (max-width: 1366px) {
+            padding: 0 3.5rem;
+            font-size: 3.5rem;
+            width: 550px;
+        }
+    }
+
+    h3{
+        @media (max-width: 1366px) {
+            padding: 0 3.5rem;
+            font-size: 1.5rem;
+        }
     }
 
     span{
@@ -34,18 +55,33 @@ main{    //These are styles for the whole main!
         font-weight: bolder;
         color: #ffa500;
         text-decoration: underline;
+        
     }
 
     p{
         width: 44rem;
         font-size: 1.5rem;
         padding: 20px 0;
+        @media (max-width: 1366px) {
+            padding: 1rem 3.5rem;
+            font-size: 1.5rem;
+        }
     }
 
+    .clients-text-h1{
+        @media (max-width: 1366px) {
+            padding: 1rem 3.5rem;
+        }
+    }
     .clients-text{
         margin: 0;
         padding: 1rem 0;
         font-size: 1.2rem;
+
+        @media (max-width: 1366px) {
+            padding: 0 3.5rem;
+            font-size: 1.5rem;
+        }
     }
 
     span:hover{
@@ -63,6 +99,10 @@ main{    //These are styles for the whole main!
         padding: 2rem 0;
         gap: 1.5rem; 
 
+        @media (max-width: 1366px) {
+            padding: 1rem 3.5rem;
+            // font-size: 1.5rem;
+        }
         button{
             cursor: pointer;
             background-color: transparent 0;
@@ -95,10 +135,19 @@ main{    //These are styles for the whole main!
         align-items: center;
         display: flex;
         border-bottom: 1px solid;
+
+        @media (max-width: 1366px) {
+            padding: 1rem 3.5rem;
+        }
         P{
             font-size: 1.2rem;
             flex: 1;
             width: 100px;
+
+            @media (max-width: 1366px) {
+                padding: 0;
+                // width: 250px;
+            }
         }
     } 
 }
@@ -118,6 +167,12 @@ main{    //These are styles for the whole main!
     background: cover;
     background-repeat: no-repeat;
     background-position: center bottom; 
+    @media (max-width: 1366px) {
+        background-size: 40%;
+        padding: 0 7rem;
+        justify-content: center;
+        background-size: cover;
+      }
     @media (max-width: 768px) {
         padding: 15rem 0;
         background-size: cover;
@@ -138,7 +193,6 @@ main{    //These are styles for the whole main!
         p{
             width: 44rem;
             font-size: 1.5rem;
-            padding: 20px 0;
         }
   }
 
@@ -173,8 +227,6 @@ main{    //These are styles for the whole main!
     }
       
       #subscribe-btn:hover {
-        // color: #ffa500 ;
-        // border: 1px solid #ccc;
         background-color: none;
     }
     
