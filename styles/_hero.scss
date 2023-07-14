@@ -7,6 +7,11 @@ main{    //These are styles for the whole main!
     display: flex;
     min-height: 100vh;
     font-family: Fractul;
+
+
+      @media (max-width: 768px) {
+        flex-direction: column-reverse;
+      }
 }
   
   .left-column {    //These are styles for the whole left-column div!
@@ -14,7 +19,8 @@ main{    //These are styles for the whole main!
     padding: 0 10rem;
     padding-top: 7rem;
     display: flex;
-    flex: 2;
+    flex: 3;
+    justify-content: center;
     flex-direction: column;
     background-color: #fff;
     
@@ -34,6 +40,12 @@ main{    //These are styles for the whole main!
         width: 44rem;
         font-size: 1.5rem;
         padding: 20px 0;
+    }
+
+    .clients-text{
+        margin: 0;
+        padding: 1rem 0;
+        font-size: 1.2rem;
     }
 
     span:hover{
@@ -82,7 +94,9 @@ main{    //These are styles for the whole main!
         gap: 1rem;
         align-items: center;
         display: flex;
+        border-bottom: 1px solid;
         P{
+            font-size: 1.2rem;
             flex: 1;
             width: 100px;
         }
@@ -92,35 +106,81 @@ main{    //These are styles for the whole main!
   .right-column {    //These are styles for the whole right-column div!
     display: flex;
     flex-direction: column;
-    flex: 2;
     font-size: 2rem;
-    padding: 0 10rem;
-    padding-top: 7rem;
-    // background-color: #000000;
-    color: #fff;
+    justify-content: center;
+    padding: 0 7rem;
+    padding-top: 20rem;
+    // padding-top: 7rem;
+    color: #ffffff;
     background-color: #00202e;
-    // background-image: url("https://img.freepik.com/free-photo/handsome-businessman-suit-glasses-cross-arms-chest-look_176420-21750.jpg?t=st=1688972391~exp=1688972991~hmac=dd478e67f6d04a11960d789a1a59ff76f09e6278553ed49be67f6fd0b4695b70");
-    // background-image: url("/public/images/author-image.jpg");
-
+    background-image: url('/images/author-image.jpg');
+    background-size: 100%;
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom; 
     @media (max-width: 768px) {
-      .container {
-          position: absolute;
-        flex-direction: column;
-      }
+        padding: 15rem 0;
+        background-size: cover;
+
+        h2{
+            padding: 2rem;
+            font-size: 2rem;
+            width: 1000px;
+        }
     
-      .right {
-        order: 1;
-        width: 100%;
-        padding: 2rem;
-        height: 100vh;
-      }
+        span{
+            cursor: pointer;
+            font-weight: bolder;
+            color: #ffa500;
+            text-decoration: underline;
+        }
     
-      .left {
-        order: 2;
-        width: 100%;
-      }
+        p{
+            width: 44rem;
+            font-size: 1.5rem;
+            padding: 20px 0;
+        }
   }
-  }
+
+  .subscribe-form {
+    margin-top: 1.5rem;
+    // width: 80%;
+    display: flex;
+    background-color: #f0f0ee;
+    padding: 1rem 1rem;
+    justify-content: center;
+    align-items: center;
+
+    #email-input {
+        padding: 1.1rem;
+        color: #000000;
+        background-color: #f0f0ee;
+        border: none transparent 0;
+        font-size: 14px;
+        width: 300px;
+        // width: 100%;
+        // max-width: 400px;
+    
+    }
+      
+      #subscribe-btn {
+        padding: 19px 20px;
+        background-color: #ffa500;
+        color: white;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+    }
+      
+      #subscribe-btn:hover {
+        // color: #ffa500 ;
+        // border: 1px solid #ccc;
+        background-color: none;
+    }
+    
+}
+  
+}
   
 .end-footer {    //These are styles for the whole end off the footer!
     justify-content: center;
@@ -128,5 +188,5 @@ main{    //These are styles for the whole main!
     display: flex;
     padding: 2.5rem 0;
     color: #000000;
-    background-color: red;
+    background-color: #ffa500;
 }
