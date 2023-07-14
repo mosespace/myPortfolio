@@ -1,163 +1,171 @@
 @import url("/styles/stylesheet.css");
 
 header {
-    list-style: none;
-    font-family: Fractul;
-    width: 100%;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    background: #fff;
+  list-style: none;
+  font-family: Fractul;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  @media (max-width: 1366px) {
+    padding: 1.5rem 5rem;
+  }
+  @media (max-width: 900px) {
+    padding: 1rem 2rem;
+  }
+  @media (max-width: 768px) {
+    padding: 0.7rem 1rem;
+  }
+  a {
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: $primary;
+  }
+  .logo {
+    text-transform: uppercase;
+    font-size: 1.5rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 10rem;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    @media (max-width: 1366px) {
-      padding: 1.5rem 5rem;
+    gap: 1rem;
+    text-decoration: none;
+    :hover {
+      color: #ffa500;
     }
-    @media (max-width: 900px) {
-      padding: 1rem 2rem;
-    }
-    @media (max-width: 768px) {
-      padding: 0.7rem 1rem;
-    }
-    a {
-      font-weight: 600;
-      font-size: 1.1rem;
-      text-decoration: none;
-      color: $primary;
-    }
-    .logo {
-      text-transform: uppercase;
-      font-size: 1.5rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      text-decoration: none;
-      :hover{
-        color: #ffa500;
-        }
-    }
-    nav {
-      display: flex;
-      gap: 5rem;
-      transition: all 0.6s ease-in-out;
-      :hover{
+  }
+  nav {
+    display: flex;
+    gap: 5rem;
+    transition: all 0.6s ease-in-out;
+    :hover {
       color: #ffa500;
       transition: all 0.1s;
-      }
-      @media (max-width: 830px) {
-        // display: none;
-        position: fixed;
-        top: 73px;
-        background-color: $brown-gray;
-        width: 100%;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 1rem 3rem;
-        opacity: 0;
-        visibility: hidden;
-        transform: scale(0);
-        flex-direction: column;
-        a {
-          border-bottom: 1px solid rgba($brown, 0.1);
-          padding: 0.6rem 0;
-          transition: all 0.3s ease-in-out;
-          &:last-child {
-            border-bottom: none;
-          }
-          &:hover {
-            font-weight: bold;
-          }
-        }
-      }
     }
-    .showNav {
-      text-decoration: none;
-      opacity: 1;
-      visibility: visible;
-      transform: scale(1);
-    }
-    .cta {
+    @media (max-width: 830px) {
+      // display: none;
+      position: fixed;
+      top: 73px;
+      background-color: $brown-gray;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 1rem 3rem;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0);
+      flex-direction: column;
       a {
-        border:1px solid $primary;
-        padding: 1rem 3rem;
-        color: $primary;
-        // border-radius: 30px;
-        transition: all 0.8s;
-        text-transform: uppercase;
-        @media (max-width: 768px) {
-          padding: 0.7rem 1.7rem;
-        }
-        @media (max-width: 560px) {
-          display: none;
+        border-bottom: 1px solid rgba($brown, 0.1);
+        padding: 0.6rem 0;
+        transition: all 0.3s ease-in-out;
+        &:last-child {
+          border-bottom: none;
         }
         &:hover {
-            color: $brown-gray;
-            border: #ffa500;
-          background-color: rgba(#ffa500, 0.8);
+          font-weight: bold;
         }
       }
     }
-  }
-  #humbergMenu {
-    display: none;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    @media (max-width: 830px) {
-      display: flex;
-    }
-    span {
-      height: 2px;
-      width: 30px;
-      background-color: $primary;
-      transition: all 0.5s ease-in-out;
-    }
-  }
-  #humbergMenu.showNav {
-    span {
-      &:nth-child(1) {
-        transform: rotate(45deg) translateY(50%) translateX(10%);
-      }
-      &:nth-child(2) {
-        display: none;
-      }
-      &:nth-child(3) {
-        transform: rotate(-45deg) translateY(-50%) translateX(10%);
+
+    .activeLinks{
+      color: #ffa500;
+
+      &:hover{
+        color: #000000;
       }
     }
   }
-  #fixedBookBtn {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 999;
+  .showNav {
+    text-decoration: none;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  .cta {
     a {
-      display: none;
-      background: linear-gradient(to right, $primary, $brown);
-      border: 1px solid $brown-gray;
-      padding: 0.6rem 1.6rem;
-      color: $brown-gray;
-      font-size: 0.8rem;
-      border-radius: 30px;
+      border: 1px solid $primary;
+      padding: 1rem 3rem;
+      color: $primary;
+      // border-radius: 30px;
       transition: all 0.8s;
       text-transform: uppercase;
-  
+      @media (max-width: 768px) {
+        padding: 0.7rem 1.7rem;
+      }
       @media (max-width: 560px) {
-        display: flex;
+        display: none;
       }
       &:hover {
-        background-color: rgba($primary, 0.8);
+        color: $brown-gray;
+        border: #ffa500;
+        background-color: rgba(#ffa500, 0.8);
       }
     }
+  }
+}
+#humbergMenu {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  @media (max-width: 830px) {
+    display: flex;
+  }
+  span {
+    height: 2px;
+    width: 30px;
+    background-color: $primary;
+    transition: all 0.5s ease-in-out;
+  }
+}
+#humbergMenu.showNav {
+  span {
+    &:nth-child(1) {
+      transform: rotate(45deg) translateY(50%) translateX(10%);
+    }
+    &:nth-child(2) {
+      display: none;
+    }
+    &:nth-child(3) {
+      transform: rotate(-45deg) translateY(-50%) translateX(10%);
+    }
+  }
+}
+#fixedBookBtn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  a {
+    display: none;
+    background: linear-gradient(to right, $primary, $brown);
+    border: 1px solid $brown-gray;
+    padding: 0.6rem 1.6rem;
+    color: $brown-gray;
+    font-size: 0.8rem;
+    border-radius: 30px;
+    transition: all 0.8s;
+    text-transform: uppercase;
+
     @media (max-width: 560px) {
       display: flex;
     }
+    &:hover {
+      background-color: rgba($primary, 0.8);
+    }
   }
-  
+  @media (max-width: 560px) {
+    display: flex;
+  }
+}
