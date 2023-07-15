@@ -8,7 +8,8 @@ main{    //These are styles for the whole main!
     min-height: 100vh;
     font-family: Fractul;
     @media (max-width: 1366px) {
-        display: flex
+        display: flex;
+        min-height: 100vh;
       }
       @media (max-width: 768px) {
         flex-direction: column-reverse;
@@ -168,10 +169,9 @@ main{    //These are styles for the whole main!
     background-repeat: no-repeat;
     background-position: center bottom; 
     @media (max-width: 1366px) {
-        background-size: 40%;
-        padding: 0 7rem;
         justify-content: center;
         background-size: cover;
+        background-position: center bottom; 
       }
     @media (max-width: 768px) {
         padding: 15rem 0;
