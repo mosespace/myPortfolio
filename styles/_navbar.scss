@@ -21,7 +21,7 @@ header {
     padding: 1rem 2rem;
   }
   @media (max-width: 768px) {
-    padding: 0.7rem 1rem;
+    padding: .9rem 1rem;
   }
   a {
     font-weight: 600;
@@ -57,7 +57,8 @@ header {
       left: 0;
       right: 0;
       bottom: 0;
-      padding: 1rem 3rem;
+      align-items: center;
+      padding: 1rem 1rem;
       opacity: 0;
       visibility: hidden;
       transform: scale(0);
