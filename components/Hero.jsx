@@ -4,6 +4,7 @@ import { ImArrowUpRight2 } from "react-icons/im";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Image from "next/image";
+
 export default function Hero() {
   const usedValidation = {
     initial: {
@@ -24,7 +25,7 @@ export default function Hero() {
 
   return (
     <main>
-      <div className='container'>
+      <div className='container {fractul.className}' >
         <motion.div
           className='left-column'
           variants={usedValidation}
@@ -62,8 +63,8 @@ export default function Hero() {
           animate='animate'
           transition='transition'
         >
-          <h2>Thank You For Your interest in working with me</h2>
-          <p>This is the right content.</p>
+          <h2>Thank You!</h2>
+          <p>Let's connect here.</p>
 
           <div class='subscribe-form'>
             <input
