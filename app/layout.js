@@ -1,8 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "../styles/main.scss";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "WebDeveloper |Uncle Moses",
