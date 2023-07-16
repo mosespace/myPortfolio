@@ -49,7 +49,7 @@ export default function Hero() {
           <h1 className='clients-text-h1'>+84</h1>
           <p className='clients-text'>Clients on work worldwide</p>
           <div className='info-section'>
-            <h1>572 +</h1>
+            <h1>+572</h1>
             <p>Projects Done</p>
             <h1>Contact</h1>
             <p>Kiskayemoses@gmail.com</p>
@@ -62,7 +62,7 @@ export default function Hero() {
           animate='animate'
           transition='transition'
         >
-          <h2>Right Div</h2>
+          <h2>Thank You For Your interest in working with me</h2>
           <p>This is the right content.</p>
 
           <div class='subscribe-form'>
