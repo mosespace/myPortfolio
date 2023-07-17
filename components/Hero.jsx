@@ -25,7 +25,7 @@ export default function Hero() {
 
   return (
     <main>
-      <div className='container {fractul.className}' >
+      <div className='container {fractul.className}'>
         <motion.div
           className='left-column'
           variants={usedValidation}
@@ -66,7 +66,7 @@ export default function Hero() {
           <h2>Thank You!</h2>
           <p>Let's connect here.</p>
 
-          <div class='subscribe-form'>
+          <div className='subscribe-form'>
             <input
               type='email'
               id='email-input'
