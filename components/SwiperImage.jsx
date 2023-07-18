@@ -26,8 +26,8 @@ export default function App({ blogs }) {
         modules={[Autoplay, Navigation]}
         className='image-container'
       >
-        {blogs.thumbnail.map((thumbnail, id) => (
-          <SwiperSlide key={id}>
+        {blogs.thumbnail.map((thumbnail) => (
+          <SwiperSlide key={blogs.uniqueId}>
             <img src={thumbnail} alt={blogs.title} />
           </SwiperSlide>
         ))}
