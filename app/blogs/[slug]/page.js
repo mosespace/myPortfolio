@@ -3,7 +3,6 @@ import BlogData from "@/components/BlogData";
 import SwiperImage from "@/components/SwiperImage";
 import React from "react";
 
-
 export async function generateMetadata({ params, searchParams }, parent) {
   // read route params
   const { slug } = params;
@@ -32,7 +31,7 @@ export default async function Page({ params: { slug } }) {
       </div>
 
       <dayiv className='all-content'>
-        <BlogData blog={blog}/>
+        <BlogData blog={blog} />
       </dayiv>
     </div>
   );
