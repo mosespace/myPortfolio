@@ -12,7 +12,6 @@ export async function generateMetadata({ params, searchParams }, parent) {
 
   return {
     title: blog.title,
-    description: blog.overview,
     alternates: {
       canonical: `/blogs/${blog.slug}`,
     },
