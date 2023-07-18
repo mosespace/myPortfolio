@@ -6,7 +6,7 @@ export default async function sitemap() {
   const blogUrls =
     blogs.data.map((blog) => {
       return {
-        url: `${baseUrl}/blogs/slug${blog.slug}`,
+        url: `${baseUrl}/blogs/${blog.slug}`,
         lastModified: new Date(),
       };
     }) ?? [];
