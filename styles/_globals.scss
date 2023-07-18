@@ -1,12 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   min-height: 100vh;
 }
-section{
+section {
   min-height: 100vh;
-  padding: 5rem ;
+  padding: 5rem;
+  a {
+    text-decoration: none;
+  }
 }
