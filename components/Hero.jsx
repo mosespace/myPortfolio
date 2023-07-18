@@ -3,7 +3,6 @@ import React from "react";
 import { ImArrowUpRight2 } from "react-icons/im";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 export default function Hero() {
   const usedValidation = {
