@@ -1,5 +1,5 @@
 import getBlogs from "@/app/lib/getBlogs";
-import BlogData from "@/components/BlogDAta";
+import BlogData from "@/components/BlogData";
 import SwiperImage from "@/components/SwiperImage";
 import React from "react";
 
