@@ -27,7 +27,7 @@ export default function App({ blogs }) {
         className='image-container'
       >
         {blogs.thumbnail.map((thumbnail) => (
-          <SwiperSlide key={blogs.uniqueId}>
+          <SwiperSlide key={blogs.id}>
             <img src={thumbnail} alt={blogs.title} />
           </SwiperSlide>
         ))}
