@@ -6,6 +6,7 @@ $card-shadow-color: rgba(0, 0, 0, 0.254);
 body {
   min-height: 100vh;
   font-family: Fractul !important;
+  text-decoration: none;
 }
 section {
   min-height: 100vh;
@@ -18,9 +19,10 @@ section {
   color: #000000;
   display: flex;
   height: 100%;
-  background-color: $card-color;
+  // background-color: $card-color;
   gap: 3rem;
   margin-bottom: 1.5rem;
+
 
   h1 {
     font-weight: 700;
