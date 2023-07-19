@@ -20,14 +20,14 @@ header {
   @media (max-width: 900px) {
     padding: 1rem 2rem;
   }
-  @media (max-width: 768px) {
-    padding: .9rem 1rem;
+  @media (max-width: 414px) {
+    padding: 0.9rem 1rem;
   }
   a {
     font-weight: 600;
     font-size: 1.1rem;
     text-decoration: none;
-    color: $primary;
+    color: $sub-color;
   }
   .logo {
     text-transform: uppercase;
@@ -37,7 +37,7 @@ header {
     gap: 1rem;
     text-decoration: none;
     :hover {
-      color: #ffa500;
+      color: $main-color;
     }
   }
   nav {
@@ -45,26 +45,26 @@ header {
     gap: 5rem;
     transition: all 0.6s ease-in-out;
     :hover {
-      color: #ffa500;
+      color: $main-color;
       transition: all 0.1s;
     }
     @media (max-width: 830px) {
       // display: none;
       position: fixed;
       top: 73px;
-      background-color: $brown-gray;
+      background-color: $primary;
       width: 100%;
       left: 0;
       right: 0;
       bottom: 0;
-      align-items: center;
-      padding: 1rem 1rem;
+      // align-items: center;
+      padding: 1rem 2.2rem;
       opacity: 0;
       visibility: hidden;
       transform: scale(0);
       flex-direction: column;
       a {
-        border-bottom: 1px solid rgba($brown, 0.1);
+        border-bottom: 1px solid rgba($sub-color, 0.2);
         padding: 0.6rem 0;
         transition: all 0.3s ease-in-out;
         &:last-child {
@@ -76,11 +76,11 @@ header {
       }
     }
 
-    .activeLinks{
-      color: #ffa500;
+    .activeLinks {
+      color: $main-color;
 
-      &:hover{
-        color: #000000;
+      &:hover {
+        color: $sub-color;
       }
     }
   }
@@ -92,9 +92,9 @@ header {
   }
   .cta {
     a {
-      border: 1px solid $primary;
+      border: 1px solid $sub-color;
       padding: 1rem 3rem;
-      color: $primary;
+      color: $sub-color;
       // border-radius: 30px;
       transition: all 0.8s;
       text-transform: uppercase;
@@ -105,9 +105,9 @@ header {
         display: none;
       }
       &:hover {
-        color: $brown-gray;
-        border: #ffa500;
-        background-color: rgba(#ffa500, 0.8);
+        color: $primary;
+        border: $main-color;
+        background-color: rgba($main-color, 0.8);
       }
     }
   }
@@ -126,7 +126,7 @@ header {
   span {
     height: 2px;
     width: 30px;
-    background-color: $primary;
+    background-color: $sub-color;
     transition: all 0.5s ease-in-out;
   }
 }
@@ -141,32 +141,5 @@ header {
     &:nth-child(3) {
       transform: rotate(-45deg) translateY(-50%) translateX(10%);
     }
-  }
-}
-#fixedBookBtn {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 999;
-  a {
-    display: none;
-    background: linear-gradient(to right, $primary, $brown);
-    border: 1px solid $brown-gray;
-    padding: 0.6rem 1.6rem;
-    color: $brown-gray;
-    font-size: 0.8rem;
-    border-radius: 30px;
-    transition: all 0.8s;
-    text-transform: uppercase;
-
-    @media (max-width: 560px) {
-      display: flex;
-    }
-    &:hover {
-      background-color: rgba($primary, 0.8);
-    }
-  }
-  @media (max-width: 560px) {
-    display: flex;
   }
 }
