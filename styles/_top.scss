@@ -1,0 +1,39 @@
+.top-nav {
+  font-size: 0.8rem;
+  color: #fff;
+  width: 100%;
+  padding: 0.7rem 15rem;
+  align-items: center;
+  background-color: $sub-color;
+  position: relative;
+
+  .flex-works {
+    display: flex;
+    gap: 30%;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    ul {
+      gap: 1rem;
+      display: flex;
+      flex: 1;
+      list-style: none;
+    }
+
+    .social-media {
+      cursor: pointer !important;
+      display: flex;
+      gap: 30px;
+
+      :hover {
+        color: $main-color;
+      }
+    }
+  }
+}
