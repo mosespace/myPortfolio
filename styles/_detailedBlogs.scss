@@ -1,8 +1,3 @@
-$main-color: #3c1c13;
-$sub-color: #c67b40;
-$card-color: #ffffff;
-$card-shadow-color: rgba(0, 0, 0, 0.254);
-
 body {
   min-height: 100vh;
   font-family: Fractul !important;
@@ -18,7 +13,6 @@ body {
     position: relative;
     width: 100vw;
     height: 500px;
-    // padding-bottom: 25%;
     img {
       width: 100%;
       height: 100%;
@@ -78,18 +72,8 @@ body {
       }
       .icons:hover {
         cursor: pointer;
-        color: #ffa500;
+        color: $main-color;
       }
     }
-  }
-  .progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 10px;
-    background: red;
-    transform-origin: 0%;
-    padding-bottom: 100px;
   }
 }
