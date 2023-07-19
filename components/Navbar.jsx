@@ -41,8 +41,8 @@ export default function Navbar() {
   return (
     <header className='navbar'>
       <Link href='' className='logo'>
-        <Image src="/images/logo.png" width={80} height={80} alt="Kisakye Moses AKA Uncle Moses Logo" />
-        {/* <h2>Moses .</h2> */}
+        {/* <Image src="/images/logo.png" width={80} height={80} alt="Kisakye Moses AKA Uncle Moses Logo" /> */}
+        <h2>Moses .</h2>
       </Link>
       <nav className={showNavbar? "showNav" : " "}>
         {navLinks.map((link, i) => {
