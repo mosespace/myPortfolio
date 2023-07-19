@@ -30,7 +30,7 @@ function Footer() {
             <SlCalender /> April 04 2023 <TbMessageQuestion /> 0
           </span>
         </div>
-        <div className='p-padding'>
+        <div className='contact-info'>
           <h2>| CONTACT INFO</h2>
 
           <div className='textwidget'>
@@ -46,9 +46,9 @@ function Footer() {
             <li>register@kisakyemoses.com</li>
           </div>
         </div>
-        <div>
+        <div className="tags-wrapper">
           <h2>| TAGS</h2>
-          <buttonName>
+          <allButtons>
             <button>Charity</button>
             <button>Donation</button>
             <button>Education</button>
@@ -59,7 +59,7 @@ function Footer() {
             <button>Poverty</button>
             <button>Sponsor</button>
             <button className="see-more">See more tags</button>
-          </buttonName>
+          </allButtons>
         </div>
       </div>
     </div>
