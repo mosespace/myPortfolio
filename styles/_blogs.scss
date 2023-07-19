@@ -1,8 +1,3 @@
-$main-color: #3c1c13;
-$sub-color: #c67b40;
-$card-color: #ebe1de;
-$card-shadow-color: rgba(0, 0, 0, 0.254);
-
 body {
   min-height: 100vh;
   font-family: Fractul !important;
@@ -11,19 +6,31 @@ body {
 section {
   min-height: 100vh;
   padding: 5rem;
+  text-decoration: none;
+  color: $sub-color;
+  @media (max-width: 1366px) {
+    padding: 5rem 2.5rem;
+  }
   @media (max-width: 768px) {
-    padding: 2rem;
+    padding: 1rem;
+    padding-top: 2.6rem;
   }
 }
 .featured-section {
-  color: #000000;
+  color: $sub-color;
   display: flex;
   height: 100%;
-  // background-color: $card-color;
   gap: 3rem;
   margin-bottom: 1.5rem;
-
-
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    .img{
+      width: 100%;
+      height: 100%;
+    }
+  }
   h1 {
     font-weight: 700;
     font-size: 2.5rem;
@@ -35,170 +42,104 @@ section {
     line-height: 2rem;
   }
 
- 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    // gap: 3rem;
-    h1 {
-      font-weight: 700;
-      font-size: 1.6rem;
-      line-height: 1.9rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-      line-height: 2rem;
-    }
-  }
-
   .left-featured-section {
-    // width: 45%;
-    // height: 70%;
     padding: 2.4rem 1.5rem;
     justify-content: center;
-    @media (max-width: 768px) {
-      padding: 1rem;
-    }
 
-    h1{
-      width:90%;
+    @media (max-width: 1366px) {
+      padding: 0.8rem 2.5rem;
+    }
+    @media (max-width: 768px) {
+      padding: 3rem 0;
+      padding-top: 0;
+    }
+    h1 {
+      width: 90%;
+      color: $sub-color;
+      &:hover {
+        color: $main-color;
+      }
+
+      @media (max-width: 1366px) {
+        font-size: 2rem;
+        width: 100%;
+      }
+      @media (max-width: 768px) {
+        font-size: 1.6rem;
+        line-height: 2rem;
+      }
     }
     p {
-      width:90%;
+      width: 90%;
       margin-bottom: 2rem;
       margin-top: 1.5rem;
+
+      @media (max-width: 1366px) {
+        font-size: 1.3rem;
+        width: 100%;
+        color: $sub-color;
+      }
+      @media (max-width: 768px) {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+      }
     }
     .line-clamp {
-      
       display: -webkit-box;
       -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;  
+      -webkit-box-orient: vertical;
       overflow: hidden;
-    }
-    img {
-      object-fit: fit;
-      position: absolute;
-      right: 8rem;
-      height: 38%;
-      width: 17%;
-      bottom: 27%;
-      z-index: 3;
-      border-radius: 35px;
-    }
-
-    .icons {
-      align-items: center;
-      display: flex;
-      .left-icons {
-        width: 40%;
-        display: flex;
-        align-items: center;
-      }
-      .right-icons {
-        width: 60%;
-        display: flex;
-        align-items: center;
-      }
-
-      padding-top: 2rem;
-      width: 100%;
       @media (max-width: 768px) {
-        width: 90%;
-        margin: 0 auto;
-      }
-
-      .iconMarginLeft,
-      .leftRep {
-        width: 100px;
-        // margin-right: 2rem;
-        padding: 0;
-        @media (max-width: 768px) {
-          margin-right: 0;
-          width: 200px;
-        }
-      }
-      .iconMarginRight {
-        @media (max-width: 768px) {
-          margin-left: 2rem;
-          // width: 30px;
-        }
-      }
-      h4 {
-        font-weight: 600;
-        font-size: 1rem;
-        color: $sub-color;
-        // margin-left: 0;
-        @media (max-width: 768px) {
-          width: 100%;
-        }
-      }
-    }
-    @media (max-width: 768px) {
-      width: 100%;
-      padding: 0;
-
-      p {
-        padding: 1rem 0;
-      }
-
-      img {
-        display: none;
+        -webkit-line-clamp: 3;
       }
     }
 
-    .date-and-time{
+    .date-and-time {
       gap: 17rem;
       display: flex;
       align-items: center;
       padding-bottom: 2rem;
-      h2, p{
+      @media (max-width: 768px) {
+        gap: 9rem;
+        padding-bottom: 1rem;
+      }
+      h2,
+      span {
+        font-size: 1rem;
+        @media (max-width: 768px) {
+          font-size: .8rem;
+        }
+      }
+      span {
+        opacity: 1;
+        color: $dark-grew;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      border: none;
+      background-color: $main-color;
+      
+      &:hover {
+        color: white;
+        background-color: $sub-color;
+        border-radius: none;
+      }
+      @media (max-width: 768px) {
+        padding: .8rem 2rem;
         font-size: 1rem;
       }
     }
 
-    button{
-      cursor: pointer;
-      font-size: 1.5rem;
-      padding: 1rem 2rem;
-      
-      // border-radius: 30px;
-      border: none;
-      background-color: #ffa500;
-
-      &:hover{
-        color: white;
-        background-color: black;
-        border-radius: none;
-      }
-    }
-
-    .author-name{
+    .author-name {
       font-weight: bolder;
-      font-size: .7rem;
-      padding-top: .6rem;
-    }
-  }
-  .right-image-section {
-    object-fit: fit;
-    width: 40%;
-    height: 70%;
-    border-radius: 50px;
-    position: relative;
-    overflow: hidden;
-    @media (max-width: 768px) {
-      width: 100%;
-    }
-    img {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      @media (max-width: 768px) {
-        display: flex;
-        width: 100%;
-        height: 100%;
-      }
+      font-size: 0.7rem;
+      padding-top: 0.6rem;
     }
   }
 }
