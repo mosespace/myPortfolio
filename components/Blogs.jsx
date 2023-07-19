@@ -10,7 +10,7 @@ export default function Blogs({ data }) {
           <div>
             <div className='featured-section'>
               <Link key={item.id} href={`/blogs/${item.slug}`}>
-                <Image
+                <Image className="img"
                   src={item.image}
                   alt={item.title}
                   width={600}

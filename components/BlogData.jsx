@@ -23,7 +23,7 @@ export default function BlogData({ blog }) {
 
           <p className='third-paragraph'>{blog.thirdParagraph}</p>
           <Link href='' className='banner-img'>
-            <Image
+            <Image className="img"
               src={blog.bannerImage}
               alt='Image Only'
               width={700}

@@ -1,11 +1,9 @@
 main {
-  //These are styles for the whole main!
   display: flex;
   flex-direction: column;
 }
 
 .container {
-  //These are styles for the whole div!
   display: flex;
   min-height: 100vh;
   width: 100%;
@@ -13,7 +11,6 @@ main {
 }
 
 .left-column {
-  //These are styles for the whole left-column div!
   font-size: 2rem;
   padding: 0 10rem;
   padding-top: 7rem;
@@ -55,7 +52,7 @@ main {
   span {
     cursor: pointer;
     font-weight: bolder;
-    color: #ffa500;
+    color: $main-color;
     text-decoration: underline;
   }
 
@@ -106,7 +103,7 @@ main {
 
     .hire-me {
       font-size: 1.5rem;
-      background-color: #ffa500;
+      background-color: $main-color;
 
       @media (max-width: 768px) {
         font-size: 1.1rem;
@@ -114,7 +111,7 @@ main {
     }
 
     .hire-me:hover {
-      border: 1px solid #000000;
+      border: 1px solid $sub-color;
       background-color: white;
 
       @media (max-width: 768px) {
@@ -131,7 +128,7 @@ main {
     }
 
     .projects:hover {
-      border: 1px solid #ffa500;
+      border: 1px solid $main-color;
 
       @media (max-width: 768px) {
         padding: 1rem 3rem;
@@ -167,7 +164,7 @@ main {
 
   span:hover {
     text-transform: uppercase;
-    color: #000000;
+    color: $sub-color;
   }
 
   h1 {
@@ -232,7 +229,7 @@ main {
 
     #email-input {
       padding: 1.1rem;
-      color: #000000;
+      color: $sub-color;
       background-color: #f0f0ee;
       border: none transparent 0;
       font-size: 14px;
@@ -243,7 +240,7 @@ main {
 
     #subscribe-btn {
       padding: 19px 20px;
-      background-color: #ffa500;
+      background-color: $main-color;
       color: white;
       border: none;
       font-size: 14px;
@@ -262,8 +259,8 @@ main {
   align-items: center;
   display: flex;
   padding: 2.5rem 0;
-  color: #000000;
-  background-color: #ffa500;
+  color: $sub-color;
+  background-color: $main-color;
 }
 
 @media (max-width: 1366px) {
