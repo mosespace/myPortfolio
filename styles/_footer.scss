@@ -1,0 +1,76 @@
+.footer-wrapper {
+  font-size: 1.5rem;
+  color: $primary;
+  padding: 5rem 10rem;
+  background-color: $main-blue-color;
+
+  .row {
+    font-size: 1rem;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    h2 {
+      font-size: 1rem;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      &:hover {
+        cursor: pointer;
+        color: $main-color;
+      }
+    }
+    p {
+      width: 300px;
+      line-height: 1.5rem;
+    }
+    .p-padding {
+      .textwidget {
+        p {
+          margin-bottom: 20px;
+        }
+        li {
+          padding: 0;
+          cursor: pointer;
+          list-style: none;
+          font-style: italic;
+          text-decoration: underline;
+          margin: 0;
+        }
+        h3,
+        li {
+          padding: 7px 0;
+        }
+      }
+    }
+
+    buttonName {
+      display: flex;
+      flex: 1;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      button {
+        color: $primary;
+        background-color: transparent;
+        cursor: pointer;
+        border: 1px solid $main-color;
+        border-radius: 50px;
+        padding: 0.7rem 2rem;
+        &:hover {
+          color: $primary;
+          background-color: $main-color;
+          border: none;
+        }
+      }
+      .see-more {
+        color: $primary;
+        background-color: $main-color;
+        border: none;
+        &:hover {
+          color: $primary;
+          background-color: transparent;
+          border: 1px solid $main-color;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}
