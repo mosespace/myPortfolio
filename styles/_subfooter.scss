@@ -3,9 +3,8 @@
   align-items: center;
   justify-content: center;
   gap: 26rem;
-  font-size: 0.8rem;
-  padding: 1rem 10rem;
-
+  font-size: 1rem;
+  padding: 2rem 10rem;
   color: $primary;
   background-color: $main-blue-color;
 
@@ -14,12 +13,17 @@
     cursor: pointer;
     display: flex;
     gap: 30px;
+    :hover {
+        cursor: pointer;
+        color: $main-color;
+      }
   }
 
   .privacy-policy {
     font-weight: 600;
     text-align: center;
     line-height: 1.3rem;
+    font-size: .8rem;
     flex-direction: column;
     h3 {
       font-weight: 300;
@@ -27,5 +31,12 @@
 
     display: flex;
     // gap: 30px;
+  }
+
+  .logo {
+    :hover {
+      cursor: pointer;
+      color: $main-color;
+    }
   }
 }
