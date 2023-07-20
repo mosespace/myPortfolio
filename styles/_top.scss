@@ -1,11 +1,12 @@
 .top-nav {
+  position: block;
+  top: 0;
   font-size: 0.8rem;
-  color: #fff;
+  color: $primary;
   width: 100%;
   padding: 0.7rem 15rem;
   align-items: center;
-  background-color: $sub-color;
-  position: relative;
+  background-color: $main-blue-color;
 
   .flex-works {
     display: flex;
