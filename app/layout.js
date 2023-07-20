@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import SubFooter from "@/components/SubFooter";
 
 export const metadata = {
+  
   metadataBase: new URL("https://my-portfolio-mosespace.vercel.app"),
   title: {
     default: "Kisakye Moses - Uncle Moses | Developer In Kampala Uganda",
@@ -176,16 +177,6 @@ export const metadata = {
     canonical: "https://my-portfolio-mosespace.vercel.app",
   },
 };
-
-import {
-  BsFacebook,
-  BsGoogle,
-  BsInstagram,
-  BsPinterest,
-  BsPostcard,
-  BsTelephoneFill,
-  BsTwitter,
-} from "react-icons/bs";
 
 export default function RootLayout({ children }) {
   return (
