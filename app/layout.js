@@ -1,6 +1,9 @@
 import Navbar from "@/components/Navbar";
 import "../styles/main.scss";
 import "../styles/fonts.scss";
+import Top from "@/components/Top";
+import Footer from "@/components/Footer";
+import SubFooter from "@/components/SubFooter";
 
 export const metadata = {
   metadataBase: new URL("https://my-portfolio-mosespace.vercel.app"),
@@ -136,12 +139,16 @@ export const metadata = {
     "Responsive navigation",
   ],
 
-  authors: [{ name: "Kisakye Moses Also Known As Uncle Moses", url: "https://my-portfolio-mosespace.vercel.app" }],
+  authors: [
+    {
+      name: "Kisakye Moses Also Known As Uncle Moses",
+      url: "https://my-portfolio-mosespace.vercel.app",
+    },
+  ],
   creator: "Kisakye Moses Also Known As Uncle Moses",
   publisher: "Kisakye Moses Also Known As Uncle Moses",
   openGraph: {
-    title:
-      "Kisakye Moses - Uncle Moses | Web Developer In Kampala Uganda",
+    title: "Kisakye Moses - Uncle Moses | Web Developer In Kampala Uganda",
     description:
       "Kisakye Moses AKA Uncle Moses: Your trusted website developer and graphics designer in Kampala, Uganda. I specialize in crafting stunning websites, captivating graphics, and effective branding solutions. Elevate your online presence with my expertise in UI/UX design, responsive development, and digital marketing strategies. Partner with me to create a powerful visual identity that leaves a lasting impression.",
     url: "https://my-portfolio-mosespace.vercel.app",
@@ -161,8 +168,7 @@ export const metadata = {
     handle: "@bantu_creative",
     site: "@https://twitter.com/bantu_creative",
     cardType: "summary_large_image",
-    title:
-      "Kisakye Moses - Uncle Moses | Developer In Kampala Uganda",
+    title: "Kisakye Moses - Uncle Moses | Developer In Kampala Uganda",
     description:
       "Unlock the potential of your online presence with Kisakye Moses also Known Uncle Moses. Am a top-notch website developer and graphics designer in Kampala, Uganda. From stunning web design to captivating graphics, I deliver tailor-made solutions that leave a lasting impact. Let's bring your digital vision to life and stand out in the digital landscape.",
   },
@@ -171,12 +177,25 @@ export const metadata = {
   },
 };
 
+import {
+  BsFacebook,
+  BsGoogle,
+  BsInstagram,
+  BsPinterest,
+  BsPostcard,
+  BsTelephoneFill,
+  BsTwitter,
+} from "react-icons/bs";
+
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body>
+        {/* <Top/> */}
         <Navbar />
         {children}
+        {/* <Footer/> */}
+        {/* <SubFooter/> */}
       </body>
     </html>
   );
