@@ -1,0 +1,46 @@
+{
+    "data":[
+        {
+            "id":1,
+            "mainTitle":"Featured Projects",
+            "projectBrief":"Created as part of  the learning process, the goal was to build modern responsive and useful web applications. Explicabo!",
+            "projectBriefTwo":"In this project you will get to view more and see how i explored creativity into the designing project.",
+            "images":["/images/second_blog.jpg","/images/first_blog.jpg", "/images/third_blog.jpg","/images/banner-02.jpg"]
+        },
+        {
+            "id":2,
+            "mainTitle":"Graphics Design",
+            "projectBrief":"Created as part of  the learning process, the goal was to build modern responsive and useful web applications. Explicabo!",
+            "projectBriefTwo":"In this project you will get to view more and see how i explored creativity into the designing project.",
+            "images":["/images/second_blog.jpg","/images/first_blog.jpg", "/images/third_blog.jpg","/images/banner-02.jpg"]
+        },
+        {
+            "id":3,
+            "mainTitle":"All data",
+            "projectBrief":"Created as part of  the learning process, the goal was to build modern responsive and useful web applications. Explicabo!",
+            "projectBriefTwo":"In this project you will get to view more and see how i explored creativity into the designing project.",
+            "images":["/images/second_blog.jpg","/images/first_blog.jpg", "/images/third_blog.jpg","/images/banner-02.jpg"]
+        },
+        {
+            "id":4,
+            "mainTitle":"Jumia Clone",
+            "projectBrief":"Created as part of  the learning process, the goal was to build modern responsive and useful web applications. Explicabo!",
+            "projectBriefTwo":"In this project you will get to view more and see how i explored creativity into the designing project.",
+            "images":["/images/second_blog.jpg","/images/first_blog.jpg", "/images/third_blog.jpg","/images/banner-02.jpg"]
+        },
+        {
+            "id":5,
+            "mainTitle":"Iro'ds Clone",
+            "projectBrief":"Created as part of  the learning process, the goal was to build modern responsive and useful web applications. Explicabo!",
+            "projectBriefTwo":"In this project you will get to view more and see how i explored creativity into the designing project.",
+            "images":["/images/second_blog.jpg","/images/first_blog.jpg", "/images/third_blog.jpg","/images/banner-02.jpg"]
+        },
+        {
+            "id":6,
+            "mainTitle":"Collinz Clone",
+            "projectBrief":"Created as part of  the learning process, the goal was to build modern responsive and useful web applications. Explicabo!",
+            "projectBriefTwo":"In this project you will get to view more and see how i explored creativity into the designing project.",
+            "images":["/images/second_blog.jpg","/images/first_blog.jpg", "/images/third_blog.jpg","/images/banner-02.jpg"]
+        }
+    ]
+}
