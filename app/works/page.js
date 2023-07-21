@@ -1,4 +1,5 @@
-import React from "react";
+import Work from "@/components/Work";
+import getProjects from "../lib/getProjects";
 
 export const metadata = {
   title: "Works",
@@ -7,8 +8,12 @@ export const metadata = {
   },
 };
 
-function Works() {
-  return <div>Page</div>;
-}
+export default async function Works() {
+  const projects = await getProjects();
 
-export default Works;
+  return (
+
+      <Work data={projects} />
+
+  );
+}
