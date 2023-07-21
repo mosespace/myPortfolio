@@ -4,7 +4,7 @@ export default async function sitemap() {
   const baseUrl = "https://my-portfolio-mosespace.vercel.app";
   const blogs = await getBlogs();
   const blogUrls =
-    blogs.data.map((blog) => {
+    blogs?.map((blog) => {
       return {
         url: `${baseUrl}/blogs/${blog.slug}`,
         lastModified: new Date(),
