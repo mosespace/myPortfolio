@@ -7,7 +7,7 @@ import SubFooter from "@/components/SubFooter";
 
 export const metadata = {
   
-  metadataBase: new URL("https://my-portfolio-mosespace.vercel.app"),
+  metadataBase: new URL("https://kisakye-moses.vercel.app"),
   title: {
     default: "Kisakye Moses - Uncle Moses | Developer In Kampala Uganda",
     template:
@@ -143,7 +143,7 @@ export const metadata = {
   authors: [
     {
       name: "Kisakye Moses Also Known As Uncle Moses",
-      url: "https://my-portfolio-mosespace.vercel.app",
+      url: "https://kisakye-moses.vercel.app",
     },
   ],
   creator: "Kisakye Moses Also Known As Uncle Moses",
@@ -152,7 +152,7 @@ export const metadata = {
     title: "Kisakye Moses - Uncle Moses | Web Developer In Kampala Uganda",
     description:
       "Kisakye Moses AKA Uncle Moses: Your trusted website developer and graphics designer in Kampala, Uganda. I specialize in crafting stunning websites, captivating graphics, and effective branding solutions. Elevate your online presence with my expertise in UI/UX design, responsive development, and digital marketing strategies. Partner with me to create a powerful visual identity that leaves a lasting impression.",
-    url: "https://my-portfolio-mosespace.vercel.app",
+    url: "https://kisakye-moses.vercel.app",
     siteName: "Kisakye Moses Website",
     // images: [
     //   {
@@ -174,7 +174,7 @@ export const metadata = {
       "Unlock the potential of your online presence with Kisakye Moses also Known Uncle Moses. Am a top-notch website developer and graphics designer in Kampala, Uganda. From stunning web design to captivating graphics, I deliver tailor-made solutions that leave a lasting impact. Let's bring your digital vision to life and stand out in the digital landscape.",
   },
   alternates: {
-    canonical: "https://my-portfolio-mosespace.vercel.app",
+    canonical: "https://kisakye-moses.vercel.app",
   },
 };
 
