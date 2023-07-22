@@ -1,7 +1,7 @@
 import getBlogs from "./lib/getBlogs";
 
 export default async function sitemap() {
-  const baseUrl = "https://my-portfolio-mosespace.vercel.app";
+  const baseUrl = "https://kisakye-moses.vercel.app";
   const blogs = await getBlogs();
   const blogUrls =
     blogs?.map((blog) => {
