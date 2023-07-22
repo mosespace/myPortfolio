@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import "../styles/main.scss";
-import "../styles/fonts.scss";
 import Top from "@/components/Top";
 import Footer from "@/components/Footer";
 import SubFooter from "@/components/SubFooter";
