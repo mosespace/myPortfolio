@@ -16,19 +16,19 @@ export default async function sitemap() {
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-    },
-    {
       url: `${baseUrl}/works`,
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/services`,
+      url: `${baseUrl}/about`,
       lastModified: new Date(),
     },
     {
       url: `${baseUrl}/projects`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/services`,
       lastModified: new Date(),
     },
     ...blogUrls,
