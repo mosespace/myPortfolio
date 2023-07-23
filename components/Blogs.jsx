@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Blogs({ data }) {
   return (
-    <section>
+    <section className="all-blogs">
       {data.map((item) => {
         return (
           <div>
