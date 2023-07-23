@@ -1,10 +1,12 @@
-section {
+section{
   padding: 5rem;
+  // background-color: green;
   text-decoration: none;
   color: $sub-color;
 
-  @media (max-width: 414px) {
-    padding: 5rem 0.7rem;
+  @media (max-width: 768px) {
+    // background-color: red;
+    padding: 0;
     padding-top: 2.6rem;
     bottom: 0;
   }
@@ -18,8 +20,8 @@ section {
   margin-bottom: 1.5rem;
 
   @media (max-width: 768px) {
+    padding: 0 2rem;
     gap: 1rem;
-    // background-color: green;
     flex-direction: column;
 
     .img {
