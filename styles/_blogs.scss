@@ -1,60 +1,61 @@
-body {
-  min-height: 100vh;
-  text-decoration: none;
-}
 section {
-  min-height: 100vh;
   padding: 5rem;
   text-decoration: none;
   color: $sub-color;
-  @media (max-width: 1366px) {
-    padding: 2rem 2.5rem;
-  }
-  @media (max-width: 768px) {
-    padding: 1rem;
+
+  @media (max-width: 414px) {
+    padding: 5rem 0.7rem;
     padding-top: 2.6rem;
+    bottom: 0;
   }
 }
+
 .featured-section {
   color: $sub-color;
   display: flex;
   height: 100%;
   gap: 3rem;
   margin-bottom: 1.5rem;
+
   @media (max-width: 768px) {
-    display: flex;
+    gap: 1rem;
+    // background-color: green;
     flex-direction: column;
-    max-width: 100%;
+
     .img {
       width: 100%;
       height: 100%;
     }
   }
+
   h1 {
     font-weight: 700;
     font-size: 2.5rem;
-    line-height: 3.5rem;
+    line-height: 2.7rem;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2rem;
   }
 
   .left-featured-section {
-    padding: 2.4rem 1.5rem;
+    padding: 0rem 1.5rem;
     justify-content: center;
 
     @media (max-width: 1366px) {
-      padding: 0.8rem 2.5rem;
+      padding: 0.7rem 2.5rem;
     }
     @media (max-width: 768px) {
-      padding: 3rem 0;
-      padding-top: 0;
+      padding: 0.7rem 0;
     }
+
     h1 {
       width: 90%;
       color: $sub-color;
+      @media (max-width: 1366px) {
+      }
+
       &:hover {
         color: $main-color;
       }
@@ -63,13 +64,15 @@ section {
         font-size: 2rem;
         width: 100%;
       }
+
       @media (max-width: 768px) {
         font-size: 1.6rem;
         line-height: 2rem;
       }
     }
+
     p {
-      width: 90%;
+      width: 70%;
       margin-bottom: 2rem;
       margin-top: 1.5rem;
 
@@ -78,18 +81,21 @@ section {
         width: 100%;
         color: $sub-color;
       }
+
       @media (max-width: 768px) {
         margin-bottom: 1rem;
         margin-top: 1rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 1.6rem;
       }
     }
+
     .line-clamp {
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
+
       @media (max-width: 768px) {
         -webkit-line-clamp: 3;
       }
@@ -100,17 +106,30 @@ section {
       display: flex;
       align-items: center;
       padding-bottom: 2rem;
+
+      @media (max-width: 1366px) {
+        padding: 0 0 1rem 0;
+        gap: 2rem;
+      }
+
       @media (max-width: 768px) {
-        gap: 9rem;
+        gap: 11rem;
+        // gap: 9rem;
         padding-bottom: 1rem;
       }
+
       h2,
       span {
         font-size: 1rem;
+        @media (max-width: 1366px) {
+          font-size: 0.8rem;
+        }
+
         @media (max-width: 768px) {
           font-size: 0.8rem;
         }
       }
+
       span {
         opacity: 1;
         color: $dark-grew;
@@ -123,15 +142,14 @@ section {
       padding: 1rem 2rem;
       border: none;
       background-color: $main-color;
+      @media (max-width: 1366px) {
+        font-size: 0.9rem;
+      }
 
       &:hover {
         color: white;
         background-color: $sub-color;
         border-radius: none;
-      }
-      @media (max-width: 768px) {
-        padding: 0.8rem 2rem;
-        font-size: 1rem;
       }
     }
 
