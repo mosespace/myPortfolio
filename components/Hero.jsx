@@ -24,7 +24,7 @@ export default function Hero() {
 
   return (
     <main>
-      <div className='container {fractul.className}'>
+      <div className='container'>
         <motion.div
           className='left-column'
           variants={usedValidation}
@@ -77,10 +77,6 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
-      {/* <div className="end-footer">
-        <h3>Footer</h3>
-        <p>This is the footer content.</p>
-      </div> */}
     </main>
   );
 }
