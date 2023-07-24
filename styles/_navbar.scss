@@ -1,28 +1,24 @@
 header {
   list-style: none;
-  // font-family: Fractul;
   width: 100%;
   position: fixed;
   z-index: 9999;
-  // top: 0;
-  background: #fff;
+  background: $primary;
+  overflow-x: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  box-shadow:$box-shadow;
   @media (max-width: 1366px) {
     padding: 1.5rem 5rem;
   }
   @media (max-width: 900px) {
     padding: 1rem 2rem;
   }
-  @media (max-width: 414px) {
-    // padding: 0.9rem 1rem;
-  }
   a {
     font-weight: 600;
+    overflow: hidden;
     font-size: 1.1rem;
     text-decoration: none;
     color: $sub-color;
@@ -47,7 +43,7 @@ header {
       transition: all 0.1s;
     }
     @media (max-width: 830px) {
-      // display: none;
+      overflow: hidden;
       position: fixed;
       gap: 3rem;
       top: 75px;
@@ -56,13 +52,13 @@ header {
       left: 0;
       right: 0;
       bottom: 0;
-      // align-items: center;
       padding: 0 2.2rem;
       opacity: 0;
       visibility: hidden;
       transform: scale(0);
       flex-direction: column;
       a {
+        overflow: hidden;
         border-bottom: 1px solid rgba($sub-color, 0.2);
         padding: 0.6rem 0;
         transition: all 0.3s ease-in-out;
@@ -77,13 +73,14 @@ header {
 
     .activeLinks {
       color: $main-color;
-
       &:hover {
         color: $sub-color;
       }
     }
   }
-  .showNav {
+  .showNav { 
+    max-width: 100%;
+    height: 80%; // Removes or increases the nav hight
     text-decoration: none;
     opacity: 1;
     visibility: visible;
@@ -94,7 +91,6 @@ header {
       border: 1px solid $sub-color;
       padding: 1rem 3rem;
       color: $sub-color;
-      // border-radius: 30px;
       transition: all 0.8s;
       text-transform: uppercase;
       @media (max-width: 768px) {
