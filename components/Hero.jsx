@@ -3,6 +3,7 @@ import React from "react";
 import { ImArrowUpRight2 } from "react-icons/im";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
   const usedValidation = {
@@ -71,9 +72,11 @@ export default function Hero() {
               id='email-input'
               placeholder='Subscribe to my Newsletter...'
             />
-            <button id='subscribe-btn'>
-              <FaArrowRight />
-            </button>
+            <a href="mailto:Kiskayemoses@gmail.com?subject=NEWSLETTER%20SUBSCRIPTION&body=Hi%20there,%0D%0A%0D%0AI'm%20thrilled%20to%20join%20your%20newsletter!%20I%20can't%20wait%20to%20receive%20exclusive%20updates%20and%20exciting%20content%20about%20topics%20I%20love.%20Please%20add%20me%20to%20your%20mailing%20list.%0D%0A%0D%0AThank%20you%20and%20best%20regards,%0D%0A[Kisakye%20Moses]">
+              <button id='subscribe-btn'>
+                <FaArrowRight />
+              </button>
+            </a>
           </div>
         </motion.div>
       </div>
