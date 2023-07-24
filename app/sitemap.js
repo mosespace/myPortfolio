@@ -1,5 +1,3 @@
-import getBlogs from "./lib/getBlogs";
-
 export default async function sitemap() {
   const baseUrl = "https://kisakye-moses.vercel.app";
 
