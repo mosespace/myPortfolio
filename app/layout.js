@@ -1,11 +1,6 @@
-import Navbar from "@/components/Navbar";
 import "../styles/main.scss";
-import Top from "@/components/Top";
-import Footer from "@/components/Footer";
-import SubFooter from "@/components/SubFooter";
 
 export const metadata = {
-  
   metadataBase: new URL("https://kisakye-moses.vercel.app"),
   title: {
     default: "Kisakye Moses - Uncle Moses | Developer In Kampala Uganda",
@@ -180,13 +175,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body>
-        {/* <Top/> */}
-        <Navbar />
-        {children}
-        {/* <Footer/> */}
-        {/* <SubFooter/> */}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
