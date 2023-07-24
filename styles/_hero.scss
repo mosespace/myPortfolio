@@ -14,7 +14,7 @@
   background-color: $primary;
   @media (max-width: 1366px) {
     padding: 2rem 0 0 1.5rem;
-    flex: 1;
+    flex: 2;
   }
 
   h2 {
@@ -61,7 +61,7 @@
     @media (max-width: 1366px) {
       padding: 1rem 3.5rem;
       font-size: 1.5rem;
-      width: 10rem;
+      // width: 10rem;
     }
 
     @media (max-width: 768px) {
