@@ -1,22 +1,20 @@
 .container {
   display: flex;
   min-height: 100vh;
-  // width: 100%;
-  // font-family: Fractul !important;
+  width: 100%;
 }
 
 .left-column {
   font-size: 2rem;
   padding: 0 10rem;
-  // padding-top: 7rem;
   display: flex;
   flex: 3;
   justify-content: center;
   flex-direction: column;
-  background-color: #fff;
+  background-color: $primary;
   @media (max-width: 1366px) {
-    padding: 5rem 0 0 1.5rem;
-    flex: 2;
+    padding: 2rem 0 0 1.5rem;
+    flex: 1;
   }
 
   h2 {
@@ -63,6 +61,7 @@
     @media (max-width: 1366px) {
       padding: 1rem 3.5rem;
       font-size: 1.5rem;
+      width: 10rem;
     }
 
     @media (max-width: 768px) {
@@ -75,7 +74,7 @@
   .both-buttons {
     display: flex;
     border: transparent 0;
-    color: #fff;
+    color: $primary;
     padding: 2rem 0;
     gap: 1.5rem;
 
@@ -111,7 +110,7 @@
 
     .hire-me:hover {
       border: 1px solid $sub-color;
-      background-color: white;
+      background-color: $primary;
 
       @media (max-width: 768px) {
         padding: 1rem 3rem;
@@ -119,7 +118,7 @@
     }
     .projects {
       font-size: 1.5rem;
-      background-color: white;
+      background-color: $primary;
 
       @media (max-width: 768px) {
         font-size: 1.1rem;
@@ -185,6 +184,7 @@
       flex-direction: column;
       padding: 0 2rem;
       align-items: start;
+      border-bottom: none;
     }
 
     P {
@@ -215,22 +215,28 @@
   justify-content: center;
   padding: 0 7rem;
   padding-top: 20rem;
-  color: #ffffff;
-  background-color: #00202e;
+  color: $primary;
   background-image: url("/images/author-image4.jpg");
   background-size: 100%;
+  background-position: 100%;
   background: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
   @media (max-width: 1366px) {
     padding-top: 0 45rem;
+    overflow: hidden;
+  }
+  @media (max-width: 736px) {
+    width: 100%;
+    align-items: flex-start;
+    overflow: hidden;
   }
 
   .subscribe-form {
     margin-top: 1.5rem;
     // width: 80%;
     display: flex;
-    background-color: #ffffff;
+    background-color: $primary;
     padding: 1rem 1rem;
     justify-content: center;
     align-items: center;
@@ -239,18 +245,16 @@
       padding: 1.1rem;
       color: $sub-color;
       background-color: transparent;
-      color: #000000;
+      color: $sub-color;
       border: none;
       font-size: 16px;
       width: 300px;
-      // width: 100%;
-      // max-width: 400px;
     }
 
     #subscribe-btn {
       padding: 19px 20px;
       background-color: $main-color;
-      color: white;
+      color: $primary;
       border: none;
       font-size: 16px;
       cursor: pointer;
@@ -264,17 +268,16 @@
 
 @media (max-width: 768px) {
   .container {
-    // flex-direction: column;
     flex-direction: column-reverse;
     padding: 0;
     min-height: 100%;
   }
 
   .left-column {
-    // margin-top: 5rem;
-    padding: 2rem 0 ;
+    padding: 2rem 0;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
   }
 
   .right-column {
