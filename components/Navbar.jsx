@@ -32,7 +32,7 @@ export default function Navbar() {
     {
       name: "Blogs",
       path: "/blogs",
-    }
+    },
   ];
 
   function handleNavBar() {
@@ -44,10 +44,14 @@ export default function Navbar() {
         {/* <Image src="/images/logo.png" width={80} height={80} alt="Kisakye Moses AKA Uncle Moses Logo" /> */}
         <h2>Moses .</h2>
       </Link>
-      <nav className={showNavbar? "showNav" : " "}>
+      <nav className={showNavbar ? "showNav" : ""}>
         {navLinks.map((link, i) => {
-          return(
-            <Link key={i} href={link.path} className={link.path==pathname? "activeLinks" : ""}>
+          return (
+            <Link
+              key={i}
+              href={link.path}
+              className={link.path == pathname ? "activeLinks" : ""}
+            >
               {link.name}
             </Link>
           );
