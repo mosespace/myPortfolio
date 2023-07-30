@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import SubFooter from "@/components/SubFooter";
 
 export const metadata = {
-  
   metadataBase: new URL("https://kisakye-moses.vercel.app"),
   title: {
     default: "Kisakye Moses - Uncle Moses | Developer In Kampala Uganda",
@@ -184,8 +183,8 @@ export default function RootLayout({ children }) {
         {/* <Top/> */}
         <Navbar />
         {children}
-        {/* <Footer/> */}
-        {/* <SubFooter/> */}
+        {/* <Footer /> */}
+        <SubFooter/>
       </body>
     </html>
   );
