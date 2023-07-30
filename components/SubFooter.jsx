@@ -8,13 +8,13 @@ function SubFooter() {
       id: 1,
       title: "Kisakye Moses",
       facebook: <BsFacebook />,
-      facebookPath: "https://twitter.com/UgandanTweeps",
+      facebookPath: "https://facebook.com/UncleMoses",
       twitter: <BsTwitter />,
-      TwitterPath: "https://twitter.com/UgandanTweeps",
+      TwitterPath: "https://twitter.com/bantu_creative",
       instagram: <BsInstagram />,
-      instagramPath: "https://twitter.com/UgandanTweeps",
+      instagramPath: "https://instagram.com/typifymedia",
       ploicyInfo: "Privacy Policy | Terms and Conditions",
-      copyRight: "Copyright © 2023 Bosa Charity. Powered by",
+      copyRight: "Copyright © 2023 Kisakye Moses. Hosted Freely by;",
       logo: Logo,
     },
   ];
@@ -46,5 +46,4 @@ function SubFooter() {
     </div>
   );
 }
-
 export default SubFooter;
