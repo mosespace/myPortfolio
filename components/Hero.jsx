@@ -3,7 +3,9 @@ import React from "react";
 import { ImArrowUpRight2 } from "react-icons/im";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
+import myImage from "../public/images/author-image4.jpg";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   const usedValidation = {
@@ -25,48 +27,58 @@ export default function Hero() {
 
   return (
     <main>
-      <div className='container'>
-        <motion.div
-          className='left-column'
-          variants={usedValidation}
-          initial='initial'
-          animate='animate'
-          transition='transition'
-        >
-          <h2>Hello I Am Kisakye Moses</h2>
-          <h3>
-            Am a software <span>Dev.</span> and a UI/UX Designer.
-          </h3>
-          <p>
-            I've been designing web applications for over 7+ years and am super
-            experienced as a <span>FrontEnd Developer 😎</span>{" "}
-          </p>
-          <div className='both-buttons'>
-            <button className='hire-me'>Hire Me</button>
-            <button className='projects'>
-              Projects <ImArrowUpRight2 />
-            </button>
-          </div>
-          <h1 className='clients-text-h1'>+84</h1>
-          <p className='clients-text'>Clients on work worldwide</p>
-          <div className='info-section'>
-            <h1>+572</h1>
-            <p>Projects Done</p>
-            <h1>Contact</h1>
-            <p>Kiskayemoses@gmail.com</p>
-          </div>
-        </motion.div>
-        <motion.div
-          className='right-column'
-          variants={usedValidation}
-          initial='initial'
-          animate='animate'
-          transition='transition'
-        >
-          <h2>Thank You!</h2>
-          <p>Let's connect here.</p>
+      <section className='container'>
+        <div className='flex-cols'>
+          <motion.div
+            className='left-column'
+            variants={usedValidation}
+            initial='initial'
+            animate='animate'
+            transition='transition'
+          >
+            <h2>Hello I am Kisakye Moses</h2>
+            <h3>
+              Am a software <span>Dev.</span> and a UI/UX Designer.
+            </h3>
+            <p>
+              I've been designing web applications for over 7+ years and am
+              super experienced as a <span>FrontEnd Developer 😎</span>
+            </p>
+            <div className='buttons'>
+              <button className='btn-1'>Hire Me</button>
+              <button className='btn-2'>
+                Projects <ImArrowUpRight2 />
+              </button>
+            </div>
+            <div className='info-section'>
+              <div className='col-1'>
+                <h1 className='clients-text-h1'>84+</h1>
+                <p className='clients-text'>Clients on work worldwide</p>
+              </div>
+              <div className='col-2'>
+                <h1>572+</h1>
+                <p>Projects Done</p>
+              </div>
+              <div className='col-3'>
+                <h1>Contact</h1>
+                <p>Kiskayemoses@gmail.com</p>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            className='right-column'
+            variants={usedValidation}
+            initial='initial'
+            animate='animate'
+            transition='transition'
+          >
+            {/* <div className='col-image'>
+            <Image src={myImage} alt='This is the image' fill />
+          </div> */}
+            <h2>Thank You!</h2>
+            <p>Let's connect here.</p>
 
-          <div className='subscribe-form'>
+            {/* <div className='subscribe-form'>
             <input
               type='email'
               id='email-input'
@@ -77,25 +89,10 @@ export default function Hero() {
                 <FaArrowRight />
               </button>
             </a>
-          </div>
-        </motion.div>
-      </div>
+          </div> */}
+          </motion.div>
+        </div>
+      </section>
     </main>
   );
 }
-
-// document.getElementById("subscribe-btn").addEventListener("click", function() {
-//   var email = document.getElementById("email-input").value;
-
-//   if (validateEmail(email)) {
-//     // Perform the subscription process or any other desired action
-//     alert("Subscribed successfully!");
-//   } else {
-//     alert("Please enter a valid email address.");
-//   }
-// });
-
-// function validateEmail(email) {
-//   var re = /\S+@\S+\.\S+/;
-//   return re.test(email);
-// }
