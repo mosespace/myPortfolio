@@ -1,208 +1,90 @@
 .container {
-  display: flex;
-  min-height: 100vh;
-  width: 100%;
+  max-width: 100%;
 }
 
-.left-column {
-  font-size: 2rem;
-  padding: 0 10rem;
+.flex-cols {
+  padding: 2rem 0;
   display: flex;
-  flex: 3;
-  justify-content: center;
-  flex-direction: column;
-  background-color: $primary;
-  @media (max-width: 1366px) {
-    padding: 2rem 0 0 1.5rem;
-    flex: 2;
-  }
+  justify-content: space-between;
 
-  h2 {
-    font-size: 4rem;
-    width: 450px;
-
-    @media (max-width: 1366px) {
-      padding: 0 3.5rem;
-      font-size: 3.5rem;
-      width: 550px;
-    }
-
-    @media (max-width: 768px) {
-      padding: 0 2rem;
-      font-size: 2.2rem;
-      width: 300px;
-    }
-  }
-
-  h3 {
-    @media (max-width: 1366px) {
-      padding: 0 3.5rem;
-      font-size: 1.5rem;
-    }
-
-    @media (max-width: 768px) {
-      padding: 0 2rem;
-      font-size: 1.2rem;
-    }
-  }
-
-  span {
-    cursor: pointer;
-    font-weight: bolder;
-    color: $main-color;
-    text-decoration: underline;
-  }
-
-  p {
-    width: 44rem;
-    font-size: 1.5rem;
-    padding: 20px 0;
-
-    @media (max-width: 1366px) {
-      padding: 1rem 3.5rem;
-      font-size: 1.5rem;
-      // width: 10rem;
-    }
-
-    @media (max-width: 768px) {
-      padding: 0 2rem;
-      padding-top: 0.7rem;
-      width: 400px;
-    }
-  }
-
-  .both-buttons {
-    display: flex;
-    border: transparent 0;
-    color: $primary;
-    padding: 2rem 0;
-    gap: 1.5rem;
-
-    @media (max-width: 1366px) {
-      padding: 1rem 3.5rem;
-    }
-
-    @media (max-width: 768px) {
-      padding: 1rem 2rem;
-      gap: 0.5rem;
-    }
-
-    button {
-      cursor: pointer;
-      background-color: transparent 0;
-      border: none;
-      font-size: 1rem;
-      padding: 1rem 3rem;
-
-      @media (max-width: 768px) {
-        padding: 0.7rem 1.5rem;
-      }
-    }
-
-    .hire-me {
-      font-size: 1.5rem;
-      background-color: $main-color;
-
-      @media (max-width: 768px) {
-        font-size: 1.1rem;
-      }
-    }
-
-    .hire-me:hover {
-      border: 1px solid $sub-color;
-      background-color: $primary;
-
-      @media (max-width: 768px) {
-        padding: 1rem 3rem;
-      }
-    }
-    .projects {
-      font-size: 1.5rem;
-      background-color: $primary;
-
-      @media (max-width: 768px) {
-        font-size: 1.1rem;
-      }
-    }
-
-    .projects:hover {
-      border: 1px solid $main-color;
-
-      @media (max-width: 768px) {
-        padding: 1rem 3rem;
-      }
-    }
-  }
-  .clients-text-h1 {
-    @media (max-width: 1366px) {
-      padding: 1rem 3.5rem;
-    }
-
-    @media (max-width: 768px) {
-      font: 1.2rem;
-      padding: 0 2rem;
-      padding-top: 1rem;
-    }
-  }
-  .clients-text {
-    margin: 0;
-    padding: 1rem 0;
-    font-size: 1.2rem;
-
-    @media (max-width: 1366px) {
-      padding: 0 3.5rem;
-      font-size: 1.5rem;
-    }
-
-    @media (max-width: 768px) {
-      font-size: 1.1rem;
-      padding: 0.5rem 2rem;
-    }
-  }
-
-  span:hover {
-    text-transform: uppercase;
-    color: $sub-color;
-  }
-
-  h1 {
+  .left-column {
     font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $primary;
+
+    h2 {
+      font-size: 4rem;
+      width: 500px;
+    }
+
+    span {
+      cursor: pointer;
+      font-weight: bolder;
+      color: $main-color;
+      text-decoration: underline;
+      &:hover {
+        text-transform: uppercase;
+        color: $sub-color;
+      }
+    }
+
+    p {
+      width: 44rem;
+      font-size: 1.5rem;
+      padding: 20px 0;
+    }
+
+    .buttons {
+      display: flex;
+      // border: transparent 0;
+      // color: $primary;
+      // padding: 2rem 0;
+      gap: 1.5rem;
+
+      button {
+        cursor: pointer;
+        background-color: transparent 0;
+        border: none;
+        font-size: 1.2rem;
+        width: fit-content;
+        padding: 1rem 3rem;
+      }
+
+      .btn-1 {
+        background-color: $main-color;
+      }
+
+      .btn-1:hover {
+        border: 1px solid $sub-color;
+        background-color: $primary;
+      }
+    }
+    .btn-2 {
+      background-color: $primary;
+    }
+
+    .btn-2:hover {
+      border: 1px solid $main-color;
+    }
   }
 
   .info-section {
-    gap: 1rem;
-    align-items: center;
+    padding: 2rem 0;
     display: flex;
-    border-bottom: 1px solid;
+    flex-direction: column;
 
-    @media (max-width: 1366px) {
-      padding: 1rem 3.5rem;
-    }
-
-    @media (max-width: 768px) {
+    .col-1,
+    .col-2,
+    .col-3 {
       display: flex;
-      flex-direction: column;
-      padding: 0 2rem;
-      align-items: start;
-      border-bottom: none;
+      align-items: center;
+      gap: 1rem;
     }
-
-    P {
-      font-size: 1.2rem;
-      flex: 1;
-      max-width: 100px;
-      @media (max-width: 1366px) {
-        padding: 0;
-        gap: 1rem;
-        flex: 0;
-        max-width: 150px;
-      }
-
-      @media (max-width: 768px) {
-        font-size: 1.1rem;
-        padding: 0;
-        min-width: initial;
-      }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
     }
   }
 }
@@ -216,21 +98,32 @@
   padding: 0 7rem;
   padding-top: 20rem;
   color: $primary;
-  background-image: url("/images/author-image4.jpg");
+  background-color: red;
+  // background-image: url("/images/author-image4.jpg");
   background-size: 100%;
   background-position: 100%;
   background: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  @media (max-width: 1366px) {
-    padding-top: 0 45rem;
-    overflow: hidden;
+
+  .col-image {
+    position: relative;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: co;
+    }
   }
-  @media (max-width: 736px) {
-    width: 100%;
-    align-items: flex-start;
-    overflow: hidden;
-  }
+  // @media (max-width: 1366px) {
+  //   padding-top: 0 45rem;
+  //   overflow: hidden;
+  // }
+  // @media (max-width: 736px) {
+  //   width: 100%;
+  //   align-items: flex-start;
+  //   overflow: hidden;
+  // }
 
   .subscribe-form {
     margin-top: 1.5rem;
@@ -266,24 +159,24 @@
   }
 }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column-reverse;
-    padding: 0;
-    min-height: 100%;
-  }
+// @media (max-width: 768px) {
+//   .container {
+//     flex-direction: column-reverse;
+//     padding: 0;
+//     min-height: 100%;
+//   }
 
-  .left-column {
-    padding: 2rem 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
+//   .left-column {
+//     padding: 2rem 0;
+//     width: 100%;
+//     height: 100vh;
+//     overflow: hidden;
+//   }
 
-  .right-column {
-    padding-top: 1rem;
-    padding: 5rem 1rem;
-    width: 100%;
-    height: 100vh;
-  }
-}
+//   .right-column {
+//     padding-top: 1rem;
+//     padding: 5rem 1rem;
+//     width: 100%;
+//     height: 100vh;
+//   }
+// }
