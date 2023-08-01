@@ -1,8 +1,8 @@
 .footer-wrapper {
+  max-width: 100%;
   display: block;
   font-size: 1.5rem;
   color: $primary;
-  padding: 5rem 10rem;
   padding-bottom: 4rem;
   background-color: $main-blue-color;
 
@@ -11,8 +11,9 @@
     display: flex;
     gap: 60px;
     align-items: center;
+    flex: 1;
     h2 {
-      font-size: 1rem;
+      font-size: 1.3rem;
       padding-bottom: 20px;
       text-transform: uppercase;
       &:hover {
@@ -23,6 +24,19 @@
     p {
       width: 300px;
       line-height: 1.5rem;
+    }
+    .latest-post{
+      .facebook-post{
+        align-items: start;
+        position: relative;
+        height: 300px;
+        img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      }
+      
     }
     .contact-info {
       .textwidget {
@@ -45,7 +59,7 @@
     }
 
     .tags-wrapper {
-      allButtons {
+      .allButtons {
         display: flex;
         flex: 1;
         gap: 0.5rem;
@@ -56,7 +70,7 @@
           cursor: pointer;
           border: 1px solid $main-color;
           border-radius: 50px;
-          padding: 0.7rem 2rem;
+          padding: 0.5rem 2rem;
           &:hover {
             color: $primary;
             background-color: $main-color;

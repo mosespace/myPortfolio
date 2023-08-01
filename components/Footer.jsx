@@ -2,12 +2,13 @@ import Image from "next/image";
 import React from "react";
 import { SlCalender } from "react-icons/sl";
 import { TbMessageQuestion } from "react-icons/tb";
+import facebookPost from "../public/images/janet-ad.png";
 
 function Footer() {
   return (
-    <div className='footer-wrapper'>
+    <section className='footer-wrapper'>
       <div className='row'>
-        <div>
+        <div className='about-me'>
           <h2>| About Me</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex cumque
@@ -19,9 +20,11 @@ function Footer() {
             doloribus, blanditiis fugit sint distinctio facilis exercitationem.
           </p>
         </div>
-        <div>
+        <div className='latest-post'>
           <h2>| Latest Post</h2>
-          <Image src='/images/janet-ad.png' width={200} height={200} />
+          <div className='facebook-post'>
+            <Image src={facebookPost} fill />
+          </div>
           <p>
             Dudes!!!, Have you checked out this store for your beb's favorite
             ear rings?! 🙉🙉.
@@ -46,9 +49,9 @@ function Footer() {
             <li>register@kisakyemoses.com</li>
           </div>
         </div>
-        <div className="tags-wrapper">
+        <div className='tags-wrapper'>
           <h2>| TAGS</h2>
-          <allButtons>
+          <div className='allButtons'>
             <button>Charity</button>
             <button>Donation</button>
             <button>Education</button>
@@ -58,11 +61,11 @@ function Footer() {
             <button>Helping</button>
             <button>Poverty</button>
             <button>Sponsor</button>
-            <button className="see-more">See more tags</button>
-          </allButtons>
+            <button className='see-more'>See more tags</button>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
