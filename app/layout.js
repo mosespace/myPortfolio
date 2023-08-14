@@ -7,9 +7,9 @@ import SubFooter from "@/components/SubFooter";
 export const metadata = {
   metadataBase: new URL("https://kisakye-moses.vercel.app"),
   title: {
-    default: "Kisakye Moses - Uncle Moses | Software Developer In Kampala Uganda",
+    default: "Kisakye Moses - | Software Developer In Kampala Uganda",
     template:
-      "%s | Kisakye Moses - Uncle Moses | Software Developer Kampala Uganda - Affordable Website Developer & Graphics Designer. ",
+      "%s | Kisakye Moses - | Software Developer Kampala Uganda - Affordable Website Developer & Graphics Designer. ",
   },
 
   description:
