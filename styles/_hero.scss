@@ -38,9 +38,6 @@
 
     .buttons {
       display: flex;
-      // border: transparent 0;
-      // color: $primary;
-      // padding: 2rem 0;
       gap: 1.5rem;
 
       button {
@@ -92,10 +89,7 @@
 //These are styles for the whole right-column div!
 .right-column {
   display: flex;
-  // flex-direction: column;
   font-size: 2rem;
-  // justify-content: center;
-  // padding: 0 7rem;
   padding-top: 20rem;
   color: $primary;
   background-color: red;
