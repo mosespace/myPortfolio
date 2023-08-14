@@ -1,19 +1,18 @@
 header {
-  max-width: 100%;
-  list-style: none;
-  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
-  overflow: hidden;
-  z-index: 9999;
-  background: $primary;
-  overflow-x: hidden;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  z-index: 9999;
+  position: fixed;
+  max-width: 100%;
+  overflow: hidden;
+  list-style: none;
   padding: 1rem 5rem;
+  align-items: center;
+  background: $primary;
   box-shadow: $box-shadow;
+  justify-content: space-between;
 
   a {
     font-weight: 500;
