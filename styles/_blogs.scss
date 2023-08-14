@@ -1,11 +1,9 @@
 section{
   padding: 5rem;
-  // background-color: green;
   text-decoration: none;
   color: $sub-color;
 
   @media (max-width: 768px) {
-    // background-color: red;
     padding: 0;
     padding-top: 2.6rem;
     bottom: 0;
