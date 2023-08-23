@@ -1,12 +1,17 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
   const [showNavbar, setShowNavBar] = useState(false);
-  const pathname = usePathname();
+  // Adds the Router form "next/navigation"
+  const router = useRouter();
+
+  // Sets the pathname to be router.pathname
+  const pathname = router.pathname;
 
   const navLinks = [
     {
@@ -38,6 +43,12 @@ export default function Navbar() {
   function handleNavBar() {
     setShowNavBar(!showNavbar);
   }
+
+  // This function handles all the clicks done to the links and majorly it sets the ShowNavBar state to false
+  function handleLinkClick() {
+    setShowNavBar(false);
+  }
+
   return (
     <header className='navbar'>
       <Link href='' className='logo'>
@@ -51,6 +62,7 @@ export default function Navbar() {
               key={i}
               href={link.path}
               className={link.path == pathname ? "activeLinks" : ""}
+              onClick={handleLinkClick}
             >
               {link.name}
             </Link>
@@ -61,7 +73,7 @@ export default function Navbar() {
         <Link href='#'>Let's chat</Link>
       </div>
       <button
-        id='humbergMenu'
+        id='humbugMenu'
         className={showNavbar ? "showNav" : ""}
         onClick={handleNavBar}
       >
