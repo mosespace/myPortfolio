@@ -1,6 +1,6 @@
 .footer-section {
   font-size: 1rem;
-  padding: .6rem 5rem;
+  padding: 0.6rem 5rem;
   color: $primary;
   background-color: $main-blue-color;
 
@@ -37,6 +37,76 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
+      }
+    }
+  }
+}
+
+//  Media Queries For The TopNavBar
+// @media screen and (max-width: 1399.98px) {
+//   @media screen and (max-width: 1199.98px) {
+
+//   }
+
+//   @media screen and (max-width: 991.98px) {
+
+//   }
+
+//   @media screen and (max-width: 767.98px) {
+//   }
+
+//   @media screen and (max-width: 575.98px) {
+//   }
+
+//   @media screen and (max-width: 381.98px) {
+//   }
+// }
+@media screen and (max-width: 467.98px) {
+  .footer-section {
+    color: $primary;
+    padding: 0.5rem 2.5rem;
+    background-color: $sub-color;
+    .footer-col {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .sub-flex-wrapper {
+        gap: 0.8rem;
+        display: flex;
+        cursor: pointer;
+        font-size: 1rem;
+        a {
+          color: $main-color;
+          text-decoration: none;
+
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
+      .privacy-policy {
+        display: flex;
+        padding: 0.6rem 0;
+        font-size: 0.7rem;
+        align-items: center;
+        flex-direction: column;
+        p {
+          // font-size: 0.7rem;
+          text-align: center;
+        }
+      }
+      .footer-logo {
+        width: 100px;
+        height: 100px;
+        display: none;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
       }
     }
   }
