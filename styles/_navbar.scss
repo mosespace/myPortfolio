@@ -48,12 +48,12 @@ header {
   .showNav {
     opacity: 1;
     color: $primary;
-    height: 80%; // Removes or increases the nav hight
+    height: 100%;
     max-width: 100%;
     transform: scale(1);
     visibility: visible;
     text-decoration: none;
-    background-color: $sub-color;
+    // background-color: $sub-color;
   }
   .cta {
     a {
@@ -79,9 +79,6 @@ header {
   background: transparent;
   border: none;
   cursor: pointer;
-  // @media (max-width: 830px) {
-  //   display: flex;
-  // }
   span {
     height: 2px;
     width: 30px;
@@ -159,7 +156,7 @@ header {
   @media screen and (max-width: 767.98px) {
     header {
       max-width: 767.98px;
-      padding: 1rem 3.2rem;
+      // padding: 1rem 3.2rem;
       a {
         font-weight: 500;
         overflow: hidden;
@@ -180,15 +177,16 @@ header {
         width: 100%;
         position: fixed;
         overflow: hidden;
-        padding: 0 2.6rem;
+        padding: 1rem 2.6rem;
         visibility: hidden;
         transform: scale(0);
         flex-direction: column;
-        background-color: $primary;
+        background-color: $sub-color;
         a {
           overflow: hidden;
           border-bottom: 1px solid rgba($primary, 0.2);
           padding: 0.6rem 0;
+          font-size: 1.2rem;
           transition: all 0.3s ease-in-out;
           &:last-child {
             border-bottom: none;
@@ -201,7 +199,7 @@ header {
       .showNav {
         margin-top: 0;
         max-width: 100%;
-        height: 70%; // Removes or increases the nav hight
+        // height: 70%; // Removes or increases the nav hight
         text-decoration: none;
         opacity: 1;
         visibility: visible;
