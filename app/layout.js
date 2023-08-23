@@ -13,7 +13,7 @@ export const metadata = {
   },
 
   description:
-    "Welcome to Kisakye Moses Also Known as Uncle Moses, a leading softwared / website developer and graphics designer based in Kampala, Uganda. With a passion for creating visually stunning and user-friendly digital experiences, i specialize in crafting custom websites, designing captivating graphics, and implementing effective branding strategies. I am skilled as a developer and a graphics designer who utilizes cutting-edge technologies such as React, NextJs, NodeJs, NuxtJs, Vue, Php, Lalavel, HTML, CSS, JavaScript, and WordPress to bring your ideas to life. From responsive website design to engaging mobile app development, i deliver tailor-made solutions that resonate with your target audience. Whether you need a captivating logo, eye-catching print materials, or a robust e-commerce platform, i've got you covered. With a focus on user experience, search engine optimization, and digital marketing, i ensure that your online presence stands out in the competitive landscape. Partner with me (Kisakye Moses Also Known As Uncle Moses) to transform your digital vision into reality and achieve success in the ever-evolving digital world. I am a reliable web designer in Kampala Uganda. Call me today 0770 981 193",
+    "Welcome to Kisakye Moses Also Known as Uncle Moses, a leading software / website developer and graphics designer based in Kampala, Uganda. With a passion for creating visually stunning and user-friendly digital experiences, i specialize in crafting custom websites, designing captivating graphics, and implementing effective branding strategies. I am skilled as a developer and a graphics designer who utilizes cutting-edge technologies such as React, NextJs, NodeJs, NuxtJs, Vue, Php, Lalavel, HTML, CSS, JavaScript, and WordPress to bring your ideas to life. From responsive website design to engaging mobile app development, i deliver tailor-made solutions that resonate with your target audience. Whether you need a captivating logo, eye-catching print materials, or a robust e-commerce platform, i've got you covered. With a focus on user experience, search engine optimization, and digital marketing, i ensure that your online presence stands out in the competitive landscape. Partner with me (Kisakye Moses Also Known As Uncle Moses) to transform your digital vision into reality and achieve success in the ever-evolving digital world. I am a reliable web designer in Kampala Uganda. Call me today 0770 981 193",
 
   keywords: [
     "Kisakye Moses",
@@ -42,7 +42,7 @@ export const metadata = {
     "Website Design",
     "graphic design website",
     "graphic design company",
-    "graphic design crowdsourcing website",
+    "graphic design crowd sourcing website",
     "Fliers Banners design Business Card design",
     "graphic design",
     "Web development",
@@ -126,7 +126,7 @@ export const metadata = {
     "SSL certificate",
     "Mobile app design",
     "App prototyping",
-    "Wireframing",
+    "Wire framing",
     "Icon design",
     "Usability testing",
     "E-commerce platforms",
@@ -188,7 +188,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         {/* <Footer /> */}
-        {/* <SubFooter/> */}
+        <SubFooter/>
       </body>
     </html>
   );
