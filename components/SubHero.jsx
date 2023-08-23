@@ -5,7 +5,7 @@ import myImage from "../public/moses.png";
 export default function SubHero() {
   return (
     <section className='sub-hero'>
-      <div className='hero-flex'>
+      {/* <div className='hero-flex'>
         <div className='hero-content'>
           <h1>Hello I am Kisakye Moses</h1>
           <h3>
@@ -27,7 +27,7 @@ export default function SubHero() {
             fill
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
