@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import { AiFillLinkedin } from "react-icons/ai";
 import Logo from "../public/images/logo-white.png";
 
 function SubFooter() {
@@ -7,13 +8,15 @@ function SubFooter() {
     {
       id: 1,
       title: "Kisakye Moses",
+      linkedIn: <AiFillLinkedin />,
+      linkedInPath: "https://facebook.com/UncleMoses",
       facebook: <BsFacebook />,
       facebookPath: "https://facebook.com/UncleMoses",
       twitter: <BsTwitter />,
       TwitterPath: "https://twitter.com/bantu_creative",
       instagram: <BsInstagram />,
       instagramPath: "https://instagram.com/typifymedia",
-      ploicyInfo: "Privacy Policy | Terms and Conditions",
+      policyInfo: "Privacy Policy | Terms and Conditions",
       copyRight: "Copyright © 2023 Kisakye Moses. Hosted Freely by;",
       logo: Logo,
     },
@@ -25,12 +28,13 @@ function SubFooter() {
           return (
             <>
               <div className='sub-flex-wrapper' key={id}>
+                <a href={detail.linkedInPath}>{detail.linkedIn}</a>
                 <a href={detail.facebookPath}>{detail.facebook}</a>
                 <a href={detail.TwitterPath}>{detail.twitter}</a>
                 <a href={detail.instagramPath}>{detail.instagram}</a>
               </div>
               <div className='privacy-policy'>
-                <h3>{detail.ploicyInfo}</h3>
+                <h3>{detail.policyInfo}</h3>
                 <p>
                   {detail.copyRight}
                   <a> Vercel.app</a>
