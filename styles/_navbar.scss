@@ -113,6 +113,44 @@ header {
         text-decoration: none;
         color: $sub-color;
       }
+      nav {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 65px;
+        gap: 3rem;
+        opacity: 0;
+        width: 100%;
+        position: fixed;
+        overflow: hidden;
+        padding: 1rem 3rem;
+        visibility: hidden;
+        transform: scale(0);
+        flex-direction: column;
+        background-color: $sub-color;
+        a {
+          color: $primary;
+          overflow: hidden;
+          padding: 0.6rem 0;
+          font-size: 1.2rem;
+          transition: all 0.3s ease-in-out;
+          border-bottom: 1px solid rgba($primary, 0.2);
+          &:last-child {
+            border-bottom: none;
+          }
+          &:hover {
+            font-weight: none;
+          }
+        }
+      }
+      .showNav {
+        margin-top: 0;
+        max-width: 100%;
+        text-decoration: none;
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+      }
       .logo {
         color: $primary;
         font-size: 1.2rem;
@@ -126,12 +164,41 @@ header {
         }
       }
     }
+    #humbugMenu {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 5px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      span {
+        height: 2px;
+        width: 30px;
+        background-color: $primary;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+    #humbugMenu.showNav {
+      span {
+        color: $primary;
+        &:nth-child(1) {
+          transform: rotate(45deg) translateY(50%) translateX(10%);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg) translateY(-50%) translateX(10%);
+        }
+      }
+    }
   }
 
   @media screen and (max-width: 991.98px) {
     header {
+      padding: 1rem 3rem;
       max-width: 991.98px;
-      padding: 1rem 2.2rem;
       a {
         font-weight: 500;
         overflow: hidden;
@@ -143,11 +210,75 @@ header {
         font-size: 1.1rem;
       }
       nav {
-        gap: 2.8rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 65px;
+        gap: 3rem;
+        opacity: 0;
+        width: 100%;
+        position: fixed;
+        overflow: hidden;
+        padding: 1rem 3rem;
+        visibility: hidden;
+        transform: scale(0);
+        flex-direction: column;
+        background-color: $sub-color;
+        a {
+          color: $primary;
+          overflow: hidden;
+          padding: 0.6rem 0;
+          font-size: 1.2rem;
+          transition: all 0.3s ease-in-out;
+          border-bottom: 1px solid rgba($primary, 0.2);
+          &:last-child {
+            border-bottom: none;
+          }
+          &:hover {
+            font-weight: none;
+          }
+        }
+      }
+      .showNav {
+        margin-top: 0;
+        max-width: 100%;
+        text-decoration: none;
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
       }
       .cta {
         a {
           padding: 0.5rem 2.5rem;
+        }
+      }
+    }
+    #humbugMenu {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 5px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      span {
+        height: 2px;
+        width: 30px;
+        background-color: $primary;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+    #humbugMenu.showNav {
+      span {
+        color: $primary;
+        &:nth-child(1) {
+          transform: rotate(45deg) translateY(50%) translateX(10%);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg) translateY(-50%) translateX(10%);
         }
       }
     }
