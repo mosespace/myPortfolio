@@ -1,295 +1,144 @@
 .sub-hero {
+  display: flex;
   height: 100vh;
   overflow: hidden;
-  background-color: $primary;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d4ed8;
+  // background-size: cover;
+  // background-position: center;
+  // background-image: url("/public/imgbg.png");
 
-  .hero-flex {
-    // width: 100%;
-    display: flex;
-    padding: 2rem 0;
-    align-items: center;
-    justify-content: space-between;
-    .hero-content {
-      color: $primary;
-      h1,
-      h3 {
-        font-weight: 700;
-        font-size: 2.5rem;
-      }
-      .sub-para {
-        width: 800px;
-        font-size: 1.7rem;
-      }
-
-      .action-buttons {
-        gap: 1rem;
-        display: flex;
-        padding: 1rem 0;
-        background-color: transparent;
-        button {
-          border: 0;
-          outline: none;
-          cursor: pointer;
-          font-weight: 600;
-          font-size: 1.1rem;
-          color: $sub-color;
-          padding: 1rem 2.1rem;
-          background-color: #fbbf24;
-          &:hover {
-            color: $primary;
-            border: 2px Solid $sub-color;
-            background-color: transparent;
-          }
-        }
-      }
+  .hero-content {
+    // .bg-image {
+    //   // position: ab;
+    //   position: cover;
+    //   // opacity: 0.6;
+    //   height: 100%;
+    //   img {
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    //   }
+    // }
+    padding: 5rem 0;
+    color: $primary;
+    text-align: center;
+    .main-title {
+      font-size: 6rem;
+      width: 800px;
     }
+    button {
+      border: 0;
+      cursor: pointer;
+      color: #1d4ed8;
+      font-weight: 500;
+      margin-top: 1rem;
+      padding: 1rem 2.1rem;
+      font-size: 1.2rem;
+      background-color: $primary;
+      transition: background-color 0.6s, border 0.6s;
 
-    .my-image {
-      width: 100%;
-      height: 700px;
-      right: 0;
-      position: relative;
-      pointer-events: none;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+      &:hover {
+        color: $primary;
+        background-color: transparent;
+        border: 2px solid $primary;
+        padding: 0.9rem 3rem;
       }
     }
   }
 }
 
-/*Media Querries-----------------------------------*/
+// .hero-flex {
+//   // width: 100%;
+//   display: flex;
+//   padding: 2rem 0;
+//   align-items: center;
+//   justify-content: space-between;
+//   .hero-content {
+//     color: $primary;
+//     h1,
+//     h3 {
+//       font-weight: 700;
+//       font-size: 2.5rem;
+//     }
+//     .sub-para {
+//       width: 800px;
+//       font-size: 1.7rem;
+//     }
+
+//     .action-buttons {
+//       gap: 1rem;
+//       display: flex;
+//       padding: 1rem 0;
+//       background-color: transparent;
+//       button {
+//         border: 0;
+//         outline: none;
+//         cursor: pointer;
+//         font-weight: 600;
+//         font-size: 1.1rem;
+//         color: $sub-color;
+//         padding: 1rem 2.1rem;
+//         background-color: #fbbf24;
+//         &:hover {
+//           color: $primary;
+//           border: 2px Solid $sub-color;
+//           background-color: transparent;
+//         }
+//       }
+//     }
+//   }
+
+//   .my-image {
+//     width: 100%;
+//     height: 700px;
+//     right: 0;
+//     position: relative;
+//     pointer-events: none;
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: contain;
+//     }
+//   }
+// }
+
+// /*Media Querries-----------------------------------*/
 @media screen and (max-width: 1399.98px) {
   @media screen and (max-width: 1199.98px) {
-    .sub-hero {
-      height: 70vh;
-      padding: 3rem;
-
-      .hero-flex {
-        // width: 100%;
-        display: flex;
-        padding: 2rem 0;
-        align-items: center;
-        justify-content: space-between;
-        .hero-content {
-          color: $primary;
-          h1,
-          h3 {
-            font-weight: 700;
-            font-size: 2rem;
-          }
-          .sub-para {
-            width: 600px;
-            font-size: 1.3rem;
-          }
-
-          .action-buttons {
-            gap: 1rem;
-            display: flex;
-            padding: 1rem 0;
-            button {
-              border: 0;
-              outline: none;
-              cursor: pointer;
-              font-weight: 600;
-              font-size: 1.1rem;
-              color: $sub-color;
-              padding: 1rem 2.1rem;
-              background-color: #fbbf24;
-            }
-          }
-        }
-
-        .my-image {
-          width: 400px;
-          height: 400px;
-          position: relative;
-          pointer-events: none;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-          }
-        }
-      }
-    }
   }
   @media screen and (max-width: 767.98px) {
-    .sub-hero {
-      height: 50vh;
-      padding: 3rem;
-
-      .hero-flex {
-        display: flex;
-        padding: 3rem 0;
-        align-items: center;
-        justify-content: space-between;
-        .hero-content {
-          color: $primary;
-          h1,
-          h3 {
-            font-weight: 700;
-            font-size: 2rem;
-          }
-          .sub-para {
-            width: 600px;
-            font-size: 1.3rem;
-          }
-
-          .action-buttons {
-            gap: 1rem;
-            display: flex;
-            padding: 1rem 0;
-            button {
-              border: 0;
-              outline: none;
-              cursor: pointer;
-              font-weight: 600;
-              font-size: 1.1rem;
-              color: $sub-color;
-              padding: 1rem 2.1rem;
-              background-color: #fbbf24;
-            }
-          }
-        }
-
-        .my-image {
-          display: none;
-          width: 400px;
-          height: 400px;
-          position: relative;
-          pointer-events: none;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-          }
-        }
-      }
-    }
   }
   @media screen and (max-width: 575.98px) {
-    .sub-hero {
-      height: 50vh;
-      padding: 3rem;
-
-      .hero-flex {
-        display: flex;
-        padding: 4rem 0;
-        align-items: center;
-        justify-content: space-between;
-        .hero-content {
-          color: $primary;
-          h1,
-          h3 {
-            font-weight: 700;
-            font-size: 1.6rem;
-          }
-          .sub-para {
-            width: 500px;
-            font-size: 1.1rem;
-          }
-
-          .action-buttons {
-            gap: 1rem;
-            display: flex;
-            padding: 1rem 0;
-            button {
-              border: 0;
-              outline: none;
-              cursor: pointer;
-              font-weight: 600;
-              font-size: 1.1rem;
-              color: $sub-color;
-              padding: 1rem 2.1rem;
-              background-color: #fbbf24;
-            }
-          }
-        }
-
-        .my-image {
-          display: none;
-          width: 400px;
-          height: 400px;
-          position: relative;
-          pointer-events: none;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-          }
-        }
-      }
-    }
   }
   @media screen and (max-width: 467.98px) {
     .sub-hero {
-      height: 30%;
-      padding: 3rem;
-      padding-bottom: 0;
-
-      .hero-flex {
-        display: flex;
-        padding-top: 4rem;
-        padding-bottom: 0;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-        .hero-content {
-          color: $primary;
-          h1 {
-            width: 250px;
-            font-weight: 700;
-            font-size: 2rem;
-            padding-bottom: 0.8rem;
-          }
-          h3 {
-            width: 320px;
-            font-size: 2rem;
-            font-weight: 500;
-          }
-          .sub-para {
-            width: 320px;
-            padding-top: 0.8rem;
-            font-size: 1.1rem;
-          }
-
-          .action-buttons {
-            gap: 1rem;
-            display: flex;
-            padding: 1rem 0;
-            button {
-              border: 0;
-              outline: none;
-              cursor: pointer;
-              font-weight: 600;
-              font-size: 1.1rem;
-              color: $sub-color;
-              padding: 1rem 2.1rem;
-              background-color: #fbbf24;
-              &:hover {
-                border: 0;
-                display: block;
-                color: $sub-color;
-                background-color: #fbbf24;
-              }
-            }
-          }
+      .hero-content {
+        padding: 5rem 2.6rem;
+        color: $primary;
+        // background-color: red;
+        text-align: left;
+        .main-title {
+          font-size: 2.7rem;
+          width: 330px;
         }
+        button {
+          border: 0;
+          cursor: pointer;
+          color: #1d4ed8;
+          font-weight: 500;
+          margin-top: 1rem;
+          padding: 1rem 2.1rem;
+          font-size: 1.2rem;
+          background-color: $primary;
+          transition: background-color 0.6s, border 0.6s;
 
-        .my-image {
-          width: 400px;
-          height: 400px;
-          bottom: 0;
-          padding: 0;
-          display: block;
-          position: relative;
-          pointer-events: none;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+          &:hover {
+            color: $primary;
+            background-color: transparent;
+            border: 2px solid $primary;
+            padding: 0.9rem 2.1rem;
           }
         }
       }

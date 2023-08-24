@@ -2,7 +2,7 @@
   font-size: 1rem;
   padding: 0.6rem 5rem;
   color: $primary;
-  background-color: $main-blue-color;
+  background-color: $sub-color;
 
   .footer-col {
     display: flex;
@@ -90,12 +90,9 @@
         display: flex;
         padding: 0.6rem 0;
         font-size: 0.7rem;
+        text-align: center;
         align-items: center;
         flex-direction: column;
-        p {
-          // font-size: 0.7rem;
-          text-align: center;
-        }
       }
       .footer-logo {
         width: 100px;
