@@ -104,7 +104,7 @@
 //   }
 // }
 
-// /*Media Querries-----------------------------------*/
+// /*Media Queries-----------------------------------*/
 @media screen and (max-width: 1399.98px) {
   @media screen and (max-width: 1199.98px) {
   }
@@ -144,6 +144,37 @@
       }
     }
   }
-  @media screen and (max-width: 381px) {
+  @media screen and (max-width: 381.98px) {
+    .sub-hero {
+      height: 50vh;
+      .hero-content {
+        padding: 1rem 2.6rem;
+        color: $primary;
+        // background-color: red;
+        text-align: left;
+        .main-title {
+          font-size: 2rem;
+          width: 293px;
+        }
+        button {
+          border: 0;
+          cursor: pointer;
+          color: #1d4ed8;
+          font-weight: 500;
+          margin-top: 1rem;
+          padding: 1rem 2.1rem;
+          font-size: 1.2rem;
+          background-color: $primary;
+          transition: background-color 0.6s, border 0.6s;
+
+          &:hover {
+            color: $primary;
+            background-color: transparent;
+            border: 2px solid $primary;
+            padding: 0.9rem 2.1rem;
+          }
+        }
+      }
+    }
   }
 }
