@@ -436,12 +436,19 @@ header {
     header {
       max-width: 467.98px;
       padding: 1rem 2.6rem;
+      background-color: rgba(29, 78, 216, 1);
+      // backdrop-filter: blur(10px);
+
       a {
         font-weight: 500;
         overflow: hidden;
         font-size: 1rem;
         text-decoration: none;
         color: $primary;
+      }
+      nav {
+        background-color: rgba(29, 78, 216, 0.9);
+        backdrop-filter: blur(10px);
       }
 
       .logo {
