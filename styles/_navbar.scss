@@ -47,9 +47,9 @@ header {
   }
   .showNav {
     opacity: 1;
-    color: $primary;
     height: 100%;
     max-width: 100%;
+    color: $primary;
     transform: scale(1);
     visibility: visible;
     text-decoration: none;
@@ -248,18 +248,20 @@ header {
   @media screen and (max-width: 575.98px) {
     header {
       max-width: 575.98px;
-      padding: 1rem 3.2rem;
+      padding: 1rem 3rem;
+      nav {
+        padding: 1rem 3rem;
+      }
       a {
         font-weight: 500;
         overflow: hidden;
         font-size: 1rem;
         text-decoration: none;
-        color: $sub-color;
+        color: $primary;
       }
       .logo {
         font-size: 1.1rem;
       }
-
       .cta {
         margin-left: 5rem;
         a {
@@ -279,7 +281,7 @@ header {
       span {
         height: 2px;
         width: 30px;
-        background-color: $sub-color;
+        background-color: $primary;
         transition: all 0.5s ease-in-out;
       }
     }
