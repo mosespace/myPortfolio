@@ -156,13 +156,13 @@ header {
   @media screen and (max-width: 767.98px) {
     header {
       max-width: 767.98px;
-      // padding: 1rem 3.2rem;
+      padding: 1rem 3rem;
       a {
-        font-weight: 500;
-        overflow: hidden;
+        color: $primary;
         font-size: 1rem;
+        overflow: hidden;
+        font-weight: 500;
         text-decoration: none;
-        color: $sub-color;
       }
       .logo {
         font-size: 1.1rem;
@@ -177,7 +177,7 @@ header {
         width: 100%;
         position: fixed;
         overflow: hidden;
-        padding: 1rem 2.6rem;
+        padding: 1rem 3rem;
         visibility: hidden;
         transform: scale(0);
         flex-direction: column;
