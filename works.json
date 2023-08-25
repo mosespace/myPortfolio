@@ -1,0 +1,36 @@
+{
+  "works": [
+    {
+      "id": 1,
+      "title": "E&D Wine | ",
+      "subDescription": "E-COMMERCE",
+      "image": "/images/third_blog.jpg",
+      "description": "Explore strategies for recognition and rewards, and discover the benefits of continuous career progression for talent management and employee growth.",
+      "link": "https://github.com/mosespace/wine-website"
+    },
+    {
+      "id": 2,
+      "title": "BrandRider | ",
+      "subDescription": "BUSINESS WEBSITE",
+      "image": "/images/second_blog.jpg",
+      "description": "Explore strategies for recognition and rewards, and discover the benefits of continuous career progression.",
+      "link": "https://github.com/mosespace/brandrider"
+    },
+    {
+      "id": 3,
+      "title": "Phanero Clone | ",
+      "subDescription": "CHURCH WEBSITE",
+      "image": "/images/first_blog.jpg",
+      "description": "Explore strategies for recognition and rewards, and discover the benefits of continuous career progression.",
+      "link": "https://github.com/mosespace/phaneroo-website-clone"
+    },
+    {
+      "id": 4,
+      "title": "Minsk Clone | ",
+      "subDescription": "BUSINESS WEBSITE",
+      "image": "/images/third_blog.jpg",
+      "description": "Explore strategies for recognition and rewards, and discover the benefits of continuous career progression.",
+      "link": "https://github.com/mosespace/minsk-clone"
+    }
+  ]
+}
