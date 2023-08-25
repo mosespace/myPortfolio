@@ -1,0 +1,41 @@
+.manBody {
+  display: none !important;
+}
+@media screen and (max-width: 467.98px) {
+  .mainBody {
+    display: flex;
+    overflow: hidden;
+    padding: 0;
+    flex-direction: column;
+    .mainBody-img {
+      height: 600px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .mainBody-text {
+      color: $primary;
+      padding: 1.5rem 2.6rem;
+      background-color: $sub-color;
+      span {
+        color: #1d4ed8;
+        font-weight: 700;
+      }
+      h1 {
+        font-size: 1rem;
+        font-weight: 800;
+        padding-top: 1rem;
+        font-size: 1.5rem;
+      }
+      p {
+        font-weight: 100;
+        padding-top: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+      }
+    }
+  }
+}
